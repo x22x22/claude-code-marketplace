@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "discover": "tsx scripts/discover-marketplaces.ts",
+    "discover:save": "tsx scripts/discover-marketplaces.ts --no-dry-run",
+    "test:discovery": "tsx scripts/test-discovery.ts"
   },
   "dependencies": {
     "@vercel/speed-insights": "^1.2.0",
@@ -17,11 +20,13 @@
     "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@octokit/rest": "^22.0.1",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^24.9.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
+    "tsx": "^4.20.6",
     "typescript": "^5"
   }
 }
