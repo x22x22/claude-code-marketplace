@@ -37,11 +37,14 @@ The complete list of agent plugins has been generated in:
 ## 如何运行脚本 / How to Run the Script
 
 ```bash
-# 安装 tsx (如果尚未安装) / Install tsx (if not already installed)
-npm install -g tsx
+# 安装依赖 / Install dependencies
+npm install
 
-# 运行脚本 / Run the script
-tsx scripts/list-agent-plugins.ts
+# 运行脚本（推荐） / Run the script (recommended)
+npm run list-agent-plugins
+
+# 或使用 npx / Or use npx
+npx tsx scripts/list-agent-plugins.ts
 ```
 
 脚本会：

@@ -1,6 +1,6 @@
 # Agent Plugins Report
 
-Generated: 2025-11-01T11:34:28.025Z
+Generated: 2025-11-01T11:39:38.716Z
 
 Total agent plugins found: **261**
 
@@ -9,22 +9,22 @@ Total agent plugins found: **261**
 ## Table of Contents
 
 - [ccplugins/awesome-claude-code-plugins](#ccplugins-awesome-claude-code-plugins) (76 plugins)
-- [ananddtyagi/claude-code-marketplace](#ananddtyagi-marketplace) (74 plugins)
+- [ananddtyagi/claude-code-marketplace](#ananddtyagi-claude-code-marketplace) (74 plugins)
 - [jmanhype/claude-code-plugin-marketplace](#jmanhype-claude-code-plugin-marketplace) (10 plugins)
 - [jmanhype/claude-code-plugins](#jmanhype-claude-code-plugins) (10 plugins)
 - [aws-solutions-library-samples/guidance-for-claude-code-with-amazon-bedrock](#aws-solutions-library-samples-guidance-for-claude-code-with-amazon-bedrock) (8 plugins)
 - [kivilaid/plugin-marketplace](#kivilaid-plugin-marketplace) (7 plugins)
-- [anthropics/claude-code](#anthropic-claude-code) (4 plugins)
+- [anthropics/claude-code](#anthropics-claude-code) (4 plugins)
 - [henkisdabro/claudecode-marketplace](#henkisdabro-claudecode-marketplace) (4 plugins)
 - [anthropics-claude/claude-code](#anthropics-claude-claude-code) (3 plugins)
 - [otrebu/agents](#otrebu-agents) (3 plugins)
 - [TechNickAI/ai-coding-config](#technickai-ai-coding-config) (3 plugins)
-- [wshobson/agents](#agents-marketplace) (2 plugins)
+- [wshobson/agents](#wshobson-agents) (2 plugins)
 - [dotclaude/marketplace](#dotclaude-marketplace) (2 plugins)
-- [cexll/myclaude](#myclaude) (2 plugins)
+- [cexll/myclaude](#cexll-myclaude) (2 plugins)
 - [shinpr/claude-code-workflows](#shinpr-claude-code-workflows) (2 plugins)
 - [1broseidon/marketplace](#1broseidon-marketplace) (1 plugins)
-- [AgiFlow/aicode-toolkit](#aicode-toolkit) (1 plugins)
+- [AgiFlow/aicode-toolkit](#agiflow-aicode-toolkit) (1 plugins)
 - [aidenestelle/Aidens-claude-code-marketplace](#aidenestelle-aidens-claude-code-marketplace) (1 plugins)
 - [animalzinc/claude-plugins](#animalzinc-claude-plugins) (1 plugins)
 - [avaloki108/claude-flow----web3](#avaloki108-claude-flow-web3) (1 plugins)
@@ -32,16 +32,16 @@ Total agent plugins found: **261**
 - [bgauryy/octocode-mcp](#bgauryy-octocode-mcp) (1 plugins)
 - [blogic-cz/blogic-marketplace](#blogic-cz-blogic-marketplace) (1 plugins)
 - [classmethod/tsumiki](#classmethod-tsumiki) (1 plugins)
-- [feiskyer/claude-code-settings](#claude-code-settings) (1 plugins)
-- [davila7/claude-code-templates](#claude-code-templates) (1 plugins)
-- [amitpatole/claude-genkit-plugin](#claude-genkit-plugin) (1 plugins)
+- [feiskyer/claude-code-settings](#feiskyer-claude-code-settings) (1 plugins)
+- [davila7/claude-code-templates](#davila7-claude-code-templates) (1 plugins)
+- [amitpatole/claude-genkit-plugin](#amitpatole-claude-genkit-plugin) (1 plugins)
 - [CodeGlide/codeglide-agents](#codeglide-codeglide-agents) (1 plugins)
 - [contextgraph/claude-code-plugin](#contextgraph-claude-code-plugin) (1 plugins)
 - [Dev-GOM/claude-code-marketplace](#dev-gom-claude-code-marketplace) (1 plugins)
 - [doozMen/claude-agents-cli](#doozmen-claude-agents-cli) (1 plugins)
 - [doozMen/swift-agents-plugin](#doozmen-swift-agents-plugin) (1 plugins)
 - [DustyWalker/claude-code-marketplace](#dustywalker-claude-code-marketplace) (1 plugins)
-- [EveryInc/every-marketplace](#every-marketplace) (1 plugins)
+- [EveryInc/every-marketplace](#everyinc-every-marketplace) (1 plugins)
 - [FradSer/dotclaude](#fradser-dotclaude) (1 plugins)
 - [gsornsen/mycelium](#gsornsen-mycelium) (1 plugins)
 - [hmcts/.claude](#hmcts-claude) (1 plugins)
@@ -59,7 +59,7 @@ Total agent plugins found: **261**
 - [Parslee-ai/claude-code-plugins](#parslee-ai-claude-code-plugins) (1 plugins)
 - [phaezer/claude-mkt](#phaezer-claude-mkt) (1 plugins)
 - [Piotr1215/aiverse](#piotr1215-aiverse) (1 plugins)
-- [Play-E-Ola/playeola-plugins](#playeola-plugins) (1 plugins)
+- [Play-E-Ola/playeola-plugins](#play-e-ola-playeola-plugins) (1 plugins)
 - [rbonestell/hyperclaude-nano](#rbonestell-hyperclaude-nano) (1 plugins)
 - [ruvnet/claude-flow](#ruvnet-claude-flow) (1 plugins)
 - [schpet/jjagent](#schpet-jjagent) (1 plugins)

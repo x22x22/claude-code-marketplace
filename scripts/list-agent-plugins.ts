@@ -161,6 +161,13 @@ async function main() {
   console.log(`\n\nReport saved to: ${outputPath}`);
 }
 
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 function generateMarkdownReport(
   agentPlugins: AgentPlugin[],
   pluginsByMarketplace: Record<string, { name: string; plugins: AgentPlugin[] }>
@@ -183,7 +190,8 @@ function generateMarkdownReport(
     .sort(([, a], [, b]) => b.plugins.length - a.plugins.length);
   
   for (const [marketplaceId, data] of sortedMarketplaces) {
-    lines.push(`- [${data.name}](#${marketplaceId.replace(/[^a-z0-9-]/g, '')}) (${data.plugins.length} plugins)`);
+    const anchor = slugify(data.name);
+    lines.push(`- [${data.name}](#${anchor}) (${data.plugins.length} plugins)`);
   }
   lines.push('');
   lines.push('---');
