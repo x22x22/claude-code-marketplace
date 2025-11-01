@@ -168,8 +168,14 @@ async function main() {
 
 /**
  * Convert text to URL-safe slug for markdown anchors
- * Note: This implementation only handles ASCII characters.
- * Unicode characters will be converted to hyphens.
+ * Note: This implementation only handles ASCII characters (a-z, 0-9).
+ * All other characters (including Unicode, spaces, and special chars) are replaced with hyphens.
+ * Multiple consecutive hyphens are collapsed into one, and leading/trailing hyphens are removed.
+ * 
+ * Examples:
+ *   "Hello World" -> "hello-world"
+ *   "User's Guide" -> "user-s-guide"
+ *   "中文测试" -> "" (empty, as all chars are non-ASCII)
  */
 function slugify(text: string): string {
   return text
