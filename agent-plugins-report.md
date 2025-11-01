@@ -1,86 +1,45 @@
 # Agent Plugins Report
 
-Generated: 2025-11-01T11:39:38.716Z
+Generated: 2025-11-01T11:41:31.412Z
 
-Total agent plugins found: **261**
+Total agent plugins found: **163**
 
 ---
 
 ## Table of Contents
 
-- [ccplugins/awesome-claude-code-plugins](#ccplugins-awesome-claude-code-plugins) (76 plugins)
-- [ananddtyagi/claude-code-marketplace](#ananddtyagi-claude-code-marketplace) (74 plugins)
-- [jmanhype/claude-code-plugin-marketplace](#jmanhype-claude-code-plugin-marketplace) (10 plugins)
-- [jmanhype/claude-code-plugins](#jmanhype-claude-code-plugins) (10 plugins)
-- [aws-solutions-library-samples/guidance-for-claude-code-with-amazon-bedrock](#aws-solutions-library-samples-guidance-for-claude-code-with-amazon-bedrock) (8 plugins)
-- [kivilaid/plugin-marketplace](#kivilaid-plugin-marketplace) (7 plugins)
-- [anthropics/claude-code](#anthropics-claude-code) (4 plugins)
-- [henkisdabro/claudecode-marketplace](#henkisdabro-claudecode-marketplace) (4 plugins)
-- [anthropics-claude/claude-code](#anthropics-claude-claude-code) (3 plugins)
-- [otrebu/agents](#otrebu-agents) (3 plugins)
-- [TechNickAI/ai-coding-config](#technickai-ai-coding-config) (3 plugins)
+- [ccplugins/awesome-claude-code-plugins](#ccplugins-awesome-claude-code-plugins) (66 plugins)
+- [ananddtyagi/claude-code-marketplace](#ananddtyagi-claude-code-marketplace) (65 plugins)
+- [henkisdabro/claudecode-marketplace](#henkisdabro-claudecode-marketplace) (3 plugins)
+- [jmanhype/claude-code-plugin-marketplace](#jmanhype-claude-code-plugin-marketplace) (3 plugins)
+- [jmanhype/claude-code-plugins](#jmanhype-claude-code-plugins) (3 plugins)
+- [kivilaid/plugin-marketplace](#kivilaid-plugin-marketplace) (3 plugins)
 - [wshobson/agents](#wshobson-agents) (2 plugins)
-- [dotclaude/marketplace](#dotclaude-marketplace) (2 plugins)
-- [cexll/myclaude](#cexll-myclaude) (2 plugins)
-- [shinpr/claude-code-workflows](#shinpr-claude-code-workflows) (2 plugins)
-- [1broseidon/marketplace](#1broseidon-marketplace) (1 plugins)
-- [AgiFlow/aicode-toolkit](#agiflow-aicode-toolkit) (1 plugins)
-- [aidenestelle/Aidens-claude-code-marketplace](#aidenestelle-aidens-claude-code-marketplace) (1 plugins)
 - [animalzinc/claude-plugins](#animalzinc-claude-plugins) (1 plugins)
+- [anthropics/claude-code](#anthropics-claude-code) (1 plugins)
+- [anthropics-claude/claude-code](#anthropics-claude-claude-code) (1 plugins)
 - [avaloki108/claude-flow----web3](#avaloki108-claude-flow-web3) (1 plugins)
-- [avxkim/personal-marketplace](#avxkim-personal-marketplace) (1 plugins)
-- [bgauryy/octocode-mcp](#bgauryy-octocode-mcp) (1 plugins)
 - [blogic-cz/blogic-marketplace](#blogic-cz-blogic-marketplace) (1 plugins)
-- [classmethod/tsumiki](#classmethod-tsumiki) (1 plugins)
-- [feiskyer/claude-code-settings](#feiskyer-claude-code-settings) (1 plugins)
-- [davila7/claude-code-templates](#davila7-claude-code-templates) (1 plugins)
-- [amitpatole/claude-genkit-plugin](#amitpatole-claude-genkit-plugin) (1 plugins)
-- [CodeGlide/codeglide-agents](#codeglide-codeglide-agents) (1 plugins)
-- [contextgraph/claude-code-plugin](#contextgraph-claude-code-plugin) (1 plugins)
-- [Dev-GOM/claude-code-marketplace](#dev-gom-claude-code-marketplace) (1 plugins)
-- [doozMen/claude-agents-cli](#doozmen-claude-agents-cli) (1 plugins)
-- [doozMen/swift-agents-plugin](#doozmen-swift-agents-plugin) (1 plugins)
 - [DustyWalker/claude-code-marketplace](#dustywalker-claude-code-marketplace) (1 plugins)
-- [EveryInc/every-marketplace](#everyinc-every-marketplace) (1 plugins)
-- [FradSer/dotclaude](#fradser-dotclaude) (1 plugins)
-- [gsornsen/mycelium](#gsornsen-mycelium) (1 plugins)
-- [hmcts/.claude](#hmcts-claude) (1 plugins)
-- [hmps/claude-marketplace](#hmps-claude-marketplace) (1 plugins)
-- [jamsajones/claude-squad](#jamsajones-claude-squad) (1 plugins)
-- [jeffh/claude-plugins](#jeffh-claude-plugins) (1 plugins)
-- [kodflow/.repository](#kodflow-repository) (1 plugins)
-- [kylesnowschwartz/SimpleClaude](#kylesnowschwartz-simpleclaude) (1 plugins)
-- [lbildzinkas/claude-code-market-place](#lbildzinkas-claude-code-market-place) (1 plugins)
-- [leobrival/blog-kit](#leobrival-blog-kit) (1 plugins)
-- [lpasqualis/lpclaude](#lpasqualis-lpclaude) (1 plugins)
-- [Melvynx/aiblueprint](#melvynx-aiblueprint) (1 plugins)
+- [cexll/myclaude](#cexll-myclaude) (1 plugins)
 - [n4s5ti/claude-flow](#n4s5ti-claude-flow) (1 plugins)
-- [nibzard/steel-marketplace](#nibzard-steel-marketplace) (1 plugins)
 - [Parslee-ai/claude-code-plugins](#parslee-ai-claude-code-plugins) (1 plugins)
-- [phaezer/claude-mkt](#phaezer-claude-mkt) (1 plugins)
-- [Piotr1215/aiverse](#piotr1215-aiverse) (1 plugins)
 - [Play-E-Ola/playeola-plugins](#play-e-ola-playeola-plugins) (1 plugins)
-- [rbonestell/hyperclaude-nano](#rbonestell-hyperclaude-nano) (1 plugins)
 - [ruvnet/claude-flow](#ruvnet-claude-flow) (1 plugins)
-- [schpet/jjagent](#schpet-jjagent) (1 plugins)
-- [schuyler/duck-soup](#schuyler-duck-soup) (1 plugins)
 - [slgoodrich/agents](#slgoodrich-agents) (1 plugins)
+- [TechNickAI/ai-coding-config](#technickai-ai-coding-config) (1 plugins)
 - [thc1006/telecom-ops-claude-code-plugins](#thc1006-telecom-ops-claude-code-plugins) (1 plugins)
-- [TokenRollAI/cc-plugin](#tokenrollai-cc-plugin) (1 plugins)
 - [Toskysun/sub-agents](#toskysun-sub-agents) (1 plugins)
-- [udecode/dotai](#udecode-dotai) (1 plugins)
 - [WarrenZhu050413/Warren-Claude-Code-Plugin-Marketplace](#warrenzhu050413-warren-claude-code-plugin-marketplace) (1 plugins)
-- [webdevtodayjason/titanium-plugins](#webdevtodayjason-titanium-plugins) (1 plugins)
 - [witt3rd/claude-plugins](#witt3rd-claude-plugins) (1 plugins)
 - [xloxn69/AgileFlow](#xloxn69-agileflow) (1 plugins)
-- [zpaper-com/ClaudeKit](#zpaper-com-claudekit) (1 plugins)
 
 ---
 
 ## ccplugins/awesome-claude-code-plugins
 
 **Marketplace ID:** `ccplugins-awesome-claude-code-plugins`  
-**Agent Plugins Count:** 76
+**Agent Plugins Count:** 66
 
 ### ultrathink
 
@@ -194,14 +153,6 @@ Total agent plugins found: **261**
 
 ---
 
-### changelog-generator
-
-**Description:** Changelog Generator subagent
-
-**Source:** `./plugins/changelog-generator`
-
----
-
 ### code-architect
 
 **Description:** Use this agent when you need to design scalable architecture and folder structures for new features or projects. Examples include: when starting a new feature module, refactoring existing code organization, planning microservice boundaries, designing component hierarchies, or establishing project structure conventions. For example: user: 'I need to add a user authentication system to my app' -> assistant: 'I'll use the code-architect agent to design the architecture and folder structure for your authentication system' -> <uses agent>. Another example: user: 'How should I organize my e-commerce product catalog feature?' -> assistant: 'Let me use the code-architect agent to design a scalable structure for your product catalog' -> <uses agent>.
@@ -223,14 +174,6 @@ Total agent plugins found: **261**
 **Description:** Use this agent when you need to automate compliance processes for SOC 2, ISO 27001, GDPR, HIPAA, and other enterprise regulatory requirements. This agent specializes in compliance automation, audit preparation, continuous monitoring, and regulatory framework implementation for B2B platforms. Examples:
 
 **Source:** `./plugins/compliance-automation-specialist`
-
----
-
-### content-creator
-
-**Description:** Content Creator subagent
-
-**Source:** `./plugins/content-creator`
 
 ---
 
@@ -271,14 +214,6 @@ Total agent plugins found: **261**
 **Description:** Use this agent when setting up CI/CD pipelines, configuring Docker containers, deploying applications to cloud platforms, setting up Kubernetes clusters, implementing infrastructure as code, or automating deployment workflows. Examples: <example>Context: User is setting up a new project and needs deployment automation. user: "I've built a FastAPI application and need to deploy it to production with proper CI/CD" assistant: "I'll use the deployment-engineer agent to set up a complete deployment pipeline with Docker, GitHub Actions, and production-ready configurations."</example> <example>Context: User mentions containerization or deployment issues. user: "Our deployment process is manual and error-prone. We need to automate it." assistant: "Let me use the deployment-engineer agent to design an automated CI/CD pipeline that eliminates manual steps and ensures reliable deployments."</example>
 
 **Source:** `./plugins/deployment-engineer`
-
----
-
-### desktop-app-dev
-
-**Description:** Desktop App Dev subagent
-
-**Source:** `./plugins/desktop-app-dev`
 
 ---
 
@@ -354,27 +289,11 @@ Total agent plugins found: **261**
 
 ---
 
-### growth-hacker
-
-**Description:** Growth Hacker subagent
-
-**Source:** `./plugins/growth-hacker`
-
----
-
 ### infrastructure-maintainer
 
 **Description:** Use this agent when monitoring system health, optimizing performance, managing scaling, or ensuring infrastructure reliability. This agent excels at keeping studio applications running smoothly while preparing for growth and preventing disasters. Examples:\n\n<example>\nContext: App experiencing slow performance
 
 **Source:** `./plugins/infrastructure-maintainer`
-
----
-
-### instagram-curator
-
-**Description:** Instagram Curator subagent
-
-**Source:** `./plugins/instagram-curator`
 
 ---
 
@@ -415,14 +334,6 @@ Total agent plugins found: **261**
 **Description:** Use this agent when you need to optimize UI/UX components or interfaces for mobile-first experiences, analyze existing design themes, or ensure mobile usability standards are met. Examples: <example>Context: User has created a desktop-focused component and needs it optimized for mobile. user: 'I've built this navigation component but it's not working well on mobile devices' assistant: 'Let me use the mobile-ux-optimizer agent to analyze and improve this component for mobile-first experience' <commentary>The user needs mobile optimization expertise, so use the mobile-ux-optimizer agent to provide specific mobile UX improvements.</commentary></example> <example>Context: User is implementing a new feature and wants to ensure it follows the existing design theme. user: 'I'm adding a new form component to the app, can you help make sure it matches our design system?' assistant: 'I'll use the mobile-ux-optimizer agent to ensure this form component aligns with your existing theme and mobile-first principles' <commentary>Since this involves both theme consistency and mobile optimization, the mobile-ux-optimizer agent is the right choice.</commentary></example>
 
 **Source:** `./plugins/mobile-ux-optimizer`
-
----
-
-### model-context-protocol-mcp-expert
-
-**Description:** Model Context Protocol Mcp Expert subagent
-
-**Source:** `./plugins/model-context-protocol-mcp-expert`
 
 ---
 
@@ -522,14 +433,6 @@ Total agent plugins found: **261**
 
 ---
 
-### reddit-community-builder
-
-**Description:** Reddit Community Builder subagent
-
-**Source:** `./plugins/reddit-community-builder`
-
----
-
 ### sprint-prioritizer
 
 **Description:** Use this agent when planning 6-day development cycles, prioritizing features, managing product roadmaps, or making trade-off decisions. This agent specializes in maximizing value delivery within tight timelines. Examples:\n\n<example>\nContext: Planning the next sprint\nuser: "We have 50 feature requests but only 6 days"\nassistant: "I'll help prioritize for maximum impact. Let me use the sprint-prioritizer agent to create a focused sprint plan that delivers the most value."\n<commentary>\nSprint planning requires balancing user needs, technical constraints, and business goals.\n</commentary>\n</example>\n\n<example>\nContext: Making feature trade-offs\nuser: "Should we build AI chat or improve onboarding?"\nassistant: "Let's analyze the impact of each option. I'll use the sprint-prioritizer agent to evaluate ROI and make a data-driven recommendation."\n<commentary>\nFeature prioritization requires analyzing user impact, development effort, and strategic alignment.\n</commentary>\n</example>\n\n<example>\nContext: Mid-sprint scope changes\nuser: "The CEO wants us to add video calling to this sprint"\nassistant: "I'll assess the impact on current commitments. Let me use the sprint-prioritizer agent to reorganize priorities while maintaining sprint goals."\n<commentary>\nScope changes require careful rebalancing to avoid sprint failure.\n</commentary>\n</example>
@@ -610,14 +513,6 @@ Total agent plugins found: **261**
 
 ---
 
-### twitter-engager
-
-**Description:** Twitter Engager subagent
-
-**Source:** `./plugins/twitter-engager`
-
----
-
 ### ui-designer
 
 **Description:** Use this agent when creating user interfaces, designing components, building design systems, or improving visual aesthetics. This agent specializes in creating beautiful, functional interfaces that can be implemented quickly within 6-day sprints. Examples:\n\n<example>\nContext: Starting a new app or feature design
@@ -671,29 +566,13 @@ Total agent plugins found: **261**
 **Description:** Development kit for working with the Claude Agent SDK
 
 **Source:** `./plugins/agent-sdk-dev`
-
----
-
-### pr-review-toolkit
-
-**Description:** Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification
-
-**Source:** `./plugins/pr-review-toolkit`
-
----
-
-### feature-dev
-
-**Description:** Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review
-
-**Source:** `./plugins/feature-dev`
 
 ---
 
 ## ananddtyagi/claude-code-marketplace
 
 **Marketplace ID:** `ananddtyagi-marketplace`  
-**Agent Plugins Count:** 74
+**Agent Plugins Count:** 65
 
 ### ultrathink
 
@@ -807,14 +686,6 @@ Total agent plugins found: **261**
 
 ---
 
-### changelog-generator
-
-**Description:** Changelog Generator subagent
-
-**Source:** `./plugins/changelog-generator`
-
----
-
 ### code-architect
 
 **Description:** Use this agent when you need to design scalable architecture and folder structures for new features or projects. Examples include: when starting a new feature module, refactoring existing code organization, planning microservice boundaries, designing component hierarchies, or establishing project structure conventions. For example: user: 'I need to add a user authentication system to my app' -> assistant: 'I'll use the code-architect agent to design the architecture and folder structure for your authentication system' -> <uses agent>. Another example: user: 'How should I organize my e-commerce product catalog feature?' -> assistant: 'Let me use the code-architect agent to design a scalable structure for your product catalog' -> <uses agent>.
@@ -836,14 +707,6 @@ Total agent plugins found: **261**
 **Description:** Use this agent when you need to automate compliance processes for SOC 2, ISO 27001, GDPR, HIPAA, and other enterprise regulatory requirements. This agent specializes in compliance automation, audit preparation, continuous monitoring, and regulatory framework implementation for B2B platforms. Examples:
 
 **Source:** `./plugins/compliance-automation-specialist`
-
----
-
-### content-creator
-
-**Description:** Content Creator subagent
-
-**Source:** `./plugins/content-creator`
 
 ---
 
@@ -884,14 +747,6 @@ Total agent plugins found: **261**
 **Description:** Use this agent when setting up CI/CD pipelines, configuring Docker containers, deploying applications to cloud platforms, setting up Kubernetes clusters, implementing infrastructure as code, or automating deployment workflows. Examples: <example>Context: User is setting up a new project and needs deployment automation. user: "I've built a FastAPI application and need to deploy it to production with proper CI/CD" assistant: "I'll use the deployment-engineer agent to set up a complete deployment pipeline with Docker, GitHub Actions, and production-ready configurations."</example> <example>Context: User mentions containerization or deployment issues. user: "Our deployment process is manual and error-prone. We need to automate it." assistant: "Let me use the deployment-engineer agent to design an automated CI/CD pipeline that eliminates manual steps and ensures reliable deployments."</example>
 
 **Source:** `./plugins/deployment-engineer`
-
----
-
-### desktop-app-dev
-
-**Description:** Desktop App Dev subagent
-
-**Source:** `./plugins/desktop-app-dev`
 
 ---
 
@@ -967,27 +822,11 @@ Total agent plugins found: **261**
 
 ---
 
-### growth-hacker
-
-**Description:** Growth Hacker subagent
-
-**Source:** `./plugins/growth-hacker`
-
----
-
 ### infrastructure-maintainer
 
 **Description:** Use this agent when monitoring system health, optimizing performance, managing scaling, or ensuring infrastructure reliability. This agent excels at keeping studio applications running smoothly while preparing for growth and preventing disasters. Examples:\n\n<example>\nContext: App experiencing slow performance
 
 **Source:** `./plugins/infrastructure-maintainer`
-
----
-
-### instagram-curator
-
-**Description:** Instagram Curator subagent
-
-**Source:** `./plugins/instagram-curator`
 
 ---
 
@@ -1028,14 +867,6 @@ Total agent plugins found: **261**
 **Description:** Use this agent when you need to optimize UI/UX components or interfaces for mobile-first experiences, analyze existing design themes, or ensure mobile usability standards are met. Examples: <example>Context: User has created a desktop-focused component and needs it optimized for mobile. user: 'I've built this navigation component but it's not working well on mobile devices' assistant: 'Let me use the mobile-ux-optimizer agent to analyze and improve this component for mobile-first experience' <commentary>The user needs mobile optimization expertise, so use the mobile-ux-optimizer agent to provide specific mobile UX improvements.</commentary></example> <example>Context: User is implementing a new feature and wants to ensure it follows the existing design theme. user: 'I'm adding a new form component to the app, can you help make sure it matches our design system?' assistant: 'I'll use the mobile-ux-optimizer agent to ensure this form component aligns with your existing theme and mobile-first principles' <commentary>Since this involves both theme consistency and mobile optimization, the mobile-ux-optimizer agent is the right choice.</commentary></example>
 
 **Source:** `./plugins/mobile-ux-optimizer`
-
----
-
-### model-context-protocol-mcp-expert
-
-**Description:** Model Context Protocol Mcp Expert subagent
-
-**Source:** `./plugins/model-context-protocol-mcp-expert`
 
 ---
 
@@ -1135,14 +966,6 @@ Total agent plugins found: **261**
 
 ---
 
-### reddit-community-builder
-
-**Description:** Reddit Community Builder subagent
-
-**Source:** `./plugins/reddit-community-builder`
-
----
-
 ### sprint-prioritizer
 
 **Description:** Use this agent when planning 6-day development cycles, prioritizing features, managing product roadmaps, or making trade-off decisions. This agent specializes in maximizing value delivery within tight timelines. Examples:\n\n<example>\nContext: Planning the next sprint\nuser: "We have 50 feature requests but only 6 days"\nassistant: "I'll help prioritize for maximum impact. Let me use the sprint-prioritizer agent to create a focused sprint plan that delivers the most value."\n<commentary>\nSprint planning requires balancing user needs, technical constraints, and business goals.\n</commentary>\n</example>\n\n<example>\nContext: Making feature trade-offs\nuser: "Should we build AI chat or improve onboarding?"\nassistant: "Let's analyze the impact of each option. I'll use the sprint-prioritizer agent to evaluate ROI and make a data-driven recommendation."\n<commentary>\nFeature prioritization requires analyzing user impact, development effort, and strategic alignment.\n</commentary>\n</example>\n\n<example>\nContext: Mid-sprint scope changes\nuser: "The CEO wants us to add video calling to this sprint"\nassistant: "I'll assess the impact on current commitments. Let me use the sprint-prioritizer agent to reorganize priorities while maintaining sprint goals."\n<commentary>\nScope changes require careful rebalancing to avoid sprint failure.\n</commentary>\n</example>
@@ -1223,14 +1046,6 @@ Total agent plugins found: **261**
 
 ---
 
-### twitter-engager
-
-**Description:** Twitter Engager subagent
-
-**Source:** `./plugins/twitter-engager`
-
----
-
 ### ui-designer
 
 **Description:** Use this agent when creating user interfaces, designing components, building design systems, or improving visual aesthetics. This agent specializes in creating beautiful, functional interfaces that can be implemented quickly within 6-day sprints. Examples:\n\n<example>\nContext: Starting a new app or feature design
@@ -1279,365 +1094,10 @@ Total agent plugins found: **261**
 
 ---
 
-### experienced-engineer
-
-**Description:** Comprehensive plugin with specialized engineering subagents (API Architect, Security Specialist, Code Quality Reviewer, etc.) and productivity commands for software teams
-
-**Source:** `./plugins/experienced-engineer`
-
----
-
-## jmanhype/claude-code-plugin-marketplace
-
-**Marketplace ID:** `jmanhype-claude-code-plugin-marketplace`  
-**Agent Plugins Count:** 10
-
-### modular-agentic-dev
-
-**Description:** Structured framework for session-based, agent-driven development with modular prompts and audit checkpoints
-
-**Source:** `./plugins/modular-agentic-dev`
-
----
-
-### github-automation-suite
-
-**Description:** 13 specialized GitHub agents for PR management, code reviews, issue tracking, releases, and project boards
-
-**Source:** `./plugins/github-automation-suite`
-
----
-
-### swarm-coordination
-
-**Description:** Adaptive, hierarchical, and mesh swarm coordinators for distributed agent systems
-
-**Source:** `./plugins/swarm-coordination`
-
----
-
-### core-dev-suite
-
-**Description:** Essential development agents: planner, coder, reviewer, tester, and researcher
-
-**Source:** `./plugins/core-dev-suite`
-
----
-
-### testing-qa-framework
-
-**Description:** TDD London School agents, production validators, and comprehensive test automation
-
-**Source:** `./plugins/testing-qa-framework`
-
----
-
-### mobile-automation
-
-**Description:** ClassDojo workflow automation and React Native mobile development agents
-
-**Source:** `./plugins/mobile-automation`
-
----
-
-### architecture-design
-
-**Description:** System architecture agents, design patterns, and architectural decision support
-
-**Source:** `./plugins/architecture-design`
-
----
-
-### memory-coordination
-
-**Description:** Memory management and task orchestration for complex multi-agent workflows
-
-**Source:** `./plugins/memory-coordination`
-
----
-
-### sparc-methodology
-
-**Description:** SPARC agents and coordinator templates for systematic development methodology
-
-**Source:** `./plugins/sparc-methodology`
-
----
-
-### ace-context-engineering
-
-**Description:** Agentic Context Engineering: evolve context through bullets, deltas, and TF-IDF retrieval. Complete with schemas, validation, and production scripts.
-
-**Source:** `./plugins/ace-context-engineering`
-
----
-
-## jmanhype/claude-code-plugins
-
-**Marketplace ID:** `jmanhype-claude-code-plugins`  
-**Agent Plugins Count:** 10
-
-### modular-agentic-dev
-
-**Description:** Structured framework for session-based, agent-driven development with modular prompts and audit checkpoints
-
-**Source:** `./plugins/modular-agentic-dev`
-
----
-
-### github-automation-suite
-
-**Description:** 13 specialized GitHub agents for PR management, code reviews, issue tracking, releases, and project boards
-
-**Source:** `./plugins/github-automation-suite`
-
----
-
-### swarm-coordination
-
-**Description:** Adaptive, hierarchical, and mesh swarm coordinators for distributed agent systems
-
-**Source:** `./plugins/swarm-coordination`
-
----
-
-### core-dev-suite
-
-**Description:** Essential development agents: planner, coder, reviewer, tester, and researcher
-
-**Source:** `./plugins/core-dev-suite`
-
----
-
-### testing-qa-framework
-
-**Description:** TDD London School agents, production validators, and comprehensive test automation
-
-**Source:** `./plugins/testing-qa-framework`
-
----
-
-### mobile-automation
-
-**Description:** ClassDojo workflow automation and React Native mobile development agents
-
-**Source:** `./plugins/mobile-automation`
-
----
-
-### architecture-design
-
-**Description:** System architecture agents, design patterns, and architectural decision support
-
-**Source:** `./plugins/architecture-design`
-
----
-
-### memory-coordination
-
-**Description:** Memory management and task orchestration for complex multi-agent workflows
-
-**Source:** `./plugins/memory-coordination`
-
----
-
-### sparc-methodology
-
-**Description:** SPARC agents and coordinator templates for systematic development methodology
-
-**Source:** `./plugins/sparc-methodology`
-
----
-
-### ace-context-engineering
-
-**Description:** Agentic Context Engineering: evolve context through bullets, deltas, and TF-IDF retrieval. Complete with schemas, validation, and production scripts.
-
-**Source:** `./plugins/ace-context-engineering`
-
----
-
-## aws-solutions-library-samples/guidance-for-claude-code-with-amazon-bedrock
-
-**Marketplace ID:** `aws-solutions-library-samples-guidance-for-claude-code-with-amazon-bedrock`  
-**Agent Plugins Count:** 8
-
-### epcc-workflow
-
-**Description:** EPCC (Explore-Plan-Code-Commit) systematic development workflow with 12 specialized agents for exploration, planning, coding, and commit phases
-
-**Source:** `./assets/claude-code-plugins/plugins/epcc-workflow`
-
----
-
-### documentation
-
-**Description:** Complete Diataxis documentation framework with 12 specialized agents for tutorials, how-tos, references, explanations, and analysis
-
-**Source:** `./assets/claude-code-plugins/plugins/documentation`
-
----
-
-### architecture
-
-**Description:** Architecture design, review, and documentation with 10 specialized agents for C4 diagrams, ADRs, and quality analysis
-
-**Source:** `./assets/claude-code-plugins/plugins/architecture`
-
----
-
-### security
-
-**Description:** Security scanning, auditing, and compliance validation with 4 specialized agents for automated security gates and analysis
-
-**Source:** `./assets/claude-code-plugins/plugins/security`
-
----
-
-### testing
-
-**Description:** Testing, QA, and quality gates with 3 specialized agents for automated validation and code quality checks
-
-**Source:** `./assets/claude-code-plugins/plugins/testing`
-
----
-
-### performance
-
-**Description:** Performance profiling, optimization, and monitoring with 5 specialized agents for comprehensive performance analysis
-
-**Source:** `./assets/claude-code-plugins/plugins/performance`
-
----
-
-### tdd-workflow
-
-**Description:** TDD workflow with 6 specialized agents for test-first development, red-green-refactor cycle, and comprehensive quality analysis
-
-**Source:** `./assets/claude-code-plugins/plugins/tdd-workflow`
-
----
-
-### agile-tools
-
-**Description:** Agile team roles: Scrum Master, Product Owner, Business Analyst, and Project Manager agents
-
-**Source:** `./assets/claude-code-plugins/plugins/agile-tools`
-
----
-
-## kivilaid/plugin-marketplace
-
-**Marketplace ID:** `kivilaid-plugin-marketplace`  
-**Agent Plugins Count:** 7
-
-### example-full-featured
-
-**Description:** Full-featured productivity plugin with Git workflow automation, code review agents, test generation, validation hooks, and example MCP server
-
-**Tags:** `git`, `productivity`, `automation`, `workflow`
-
-**Source:** `./plugins/example-full-featured`
-
----
-
-### agent-sdk-dev
-
-**Description:** Development kit for working with the Claude Agent SDK
-
-**Source:** `./plugins/agent-sdk-dev`
-
----
-
-### pr-review-toolkit
-
-**Description:** Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification
-
-**Source:** `./plugins/pr-review-toolkit`
-
----
-
-### feature-dev
-
-**Description:** Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review
-
-**Source:** `./plugins/feature-dev`
-
----
-
-### error-debugging
-
-**Description:** Error analysis, trace debugging, and multi-agent problem diagnosis
-
-**Source:** `./plugins/error-debugging`
-
----
-
-### agent-orchestration
-
-**Description:** Multi-agent system optimization, agent improvement workflows, and context management
-
-**Source:** `./plugins/agent-orchestration`
-
----
-
-### supabase-toolkit
-
-**Description:** Complete Supabase workflow with specialized commands, data engineering agents, and MCP integrations
-
-**Source:** `./plugins/davila7-claude-code-templates`
-
----
-
-## anthropics/claude-code
-
-**Marketplace ID:** `anthropic-claude-code`  
-**Agent Plugins Count:** 4
-
-### agent-sdk-dev
-
-**Description:** Development kit for working with the Claude Agent SDK
-
-**Source:** `./plugins/agent-sdk-dev`
-
----
-
-### pr-review-toolkit
-
-**Description:** Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification
-
-**Source:** `./plugins/pr-review-toolkit`
-
----
-
-### feature-dev
-
-**Description:** Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review
-
-**Source:** `./plugins/feature-dev`
-
----
-
-### code-review
-
-**Description:** Automated code review for pull requests using multiple specialized agents with confidence-based scoring to filter false positives
-
-**Source:** `./plugins/code-review`
-
----
-
 ## henkisdabro/claudecode-marketplace
 
 **Marketplace ID:** `henkisdabro-claudecode-marketplace`  
-**Agent Plugins Count:** 4
-
-### experimental-workflows
-
-**Description:** Advanced infinite agentic loop for iterative generation
-
-**Source:** `./.claude-plugin`
-
----
+**Agent Plugins Count:** 3
 
 ### fullstack-developer
 
@@ -1663,9 +1123,67 @@ Total agent plugins found: **261**
 
 ---
 
-## anthropics-claude/claude-code
+## jmanhype/claude-code-plugin-marketplace
 
-**Marketplace ID:** `anthropics-claude-claude-code`  
+**Marketplace ID:** `jmanhype-claude-code-plugin-marketplace`  
+**Agent Plugins Count:** 3
+
+### modular-agentic-dev
+
+**Description:** Structured framework for session-based, agent-driven development with modular prompts and audit checkpoints
+
+**Source:** `./plugins/modular-agentic-dev`
+
+---
+
+### swarm-coordination
+
+**Description:** Adaptive, hierarchical, and mesh swarm coordinators for distributed agent systems
+
+**Source:** `./plugins/swarm-coordination`
+
+---
+
+### memory-coordination
+
+**Description:** Memory management and task orchestration for complex multi-agent workflows
+
+**Source:** `./plugins/memory-coordination`
+
+---
+
+## jmanhype/claude-code-plugins
+
+**Marketplace ID:** `jmanhype-claude-code-plugins`  
+**Agent Plugins Count:** 3
+
+### modular-agentic-dev
+
+**Description:** Structured framework for session-based, agent-driven development with modular prompts and audit checkpoints
+
+**Source:** `./plugins/modular-agentic-dev`
+
+---
+
+### swarm-coordination
+
+**Description:** Adaptive, hierarchical, and mesh swarm coordinators for distributed agent systems
+
+**Source:** `./plugins/swarm-coordination`
+
+---
+
+### memory-coordination
+
+**Description:** Memory management and task orchestration for complex multi-agent workflows
+
+**Source:** `./plugins/memory-coordination`
+
+---
+
+## kivilaid/plugin-marketplace
+
+**Marketplace ID:** `kivilaid-plugin-marketplace`  
 **Agent Plugins Count:** 3
 
 ### agent-sdk-dev
@@ -1676,83 +1194,19 @@ Total agent plugins found: **261**
 
 ---
 
-### pr-review-toolkit
+### error-debugging
 
-**Description:** Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification
+**Description:** Error analysis, trace debugging, and multi-agent problem diagnosis
 
-**Source:** `./plugins/pr-review-toolkit`
-
----
-
-### feature-dev
-
-**Description:** Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review
-
-**Source:** `./plugins/feature-dev`
+**Source:** `./plugins/error-debugging`
 
 ---
 
-## otrebu/agents
+### agent-orchestration
 
-**Marketplace ID:** `otrebu-agents`  
-**Agent Plugins Count:** 3
+**Description:** Multi-agent system optimization, agent improvement workflows, and context management
 
-### codebase-explorer
-
-**Description:** Comprehensive codebase exploration through specialized analysis agents
-
-**Source:** `./plugins/codebase-explorer`
-
----
-
-### meta-work
-
-**Description:** Tools for managing and creating Claude Code configurations, commands, agents, and plugins
-
-**Source:** `./plugins/meta-work`
-
----
-
-### feature-development
-
-**Description:** Software feature development tools with agents and commands for effective delivery
-
-**Source:** `./plugins/feature-development`
-
----
-
-## TechNickAI/ai-coding-config
-
-**Marketplace ID:** `technickai-ai-coding-config`  
-**Agent Plugins Count:** 3
-
-### code-review
-
-**Description:** Code review, testing, and architecture audit agents
-
-**Tags:** `agents`, `code-review`, `testing`, `architecture`
-
-**Source:** `./plugins/code-review`
-
----
-
-### dev-agents
-
-**Description:** Development agents - debugging, UX design, autonomous development, prompt engineering
-
-**Tags:** `agents`, `development`, `debugging`, `ux`
-
-**Source:** `./plugins/dev-agents`
-
----
-
-### git-commits
-
-**Description:** Git commit standards and PR workflows with commit message generator agent
-
-**Tags:** `git`, `workflow`, `commits`
-
-**Source:** `./plugins/git-commits`
+**Source:** `./plugins/agent-orchestration`
 
 ---
 
@@ -1777,110 +1231,6 @@ Total agent plugins found: **261**
 
 ---
 
-## dotclaude/marketplace
-
-**Marketplace ID:** `dotclaude-marketplace`  
-**Agent Plugins Count:** 2
-
-### dev-accelerator
-
-**Description:** Production-ready development workflows with TDD orchestration, feature development, security hardening, and 100+ specialized technical agents.
-
-**Source:** `./plugins/dev-accelerator`
-
----
-
-### personalities
-
-**Description:** Multi-persona analysis framework using split-team principles with cognitive harmonics, productive disagreement, and 7 specialized persona agents for multidimensional problem solving.
-
-**Source:** `./plugins/personalities`
-
----
-
-## cexll/myclaude
-
-**Marketplace ID:** `myclaude`  
-**Agent Plugins Count:** 2
-
-### bmad-agile-workflow
-
-**Description:** Full BMAD agile workflow with role-based agents (PO, Architect, SM, Dev, QA) and interactive approval gates
-
-**Source:** `./bmad-agile-workflow/`
-
----
-
-### advanced-ai-agents
-
-**Description:** Advanced AI agent for complex problem solving and deep analysis with GPT-5 integration
-
-**Source:** `./advanced-ai-agents/`
-
----
-
-## shinpr/claude-code-workflows
-
-**Marketplace ID:** `shinpr-claude-code-workflows`  
-**Agent Plugins Count:** 2
-
-### dev-workflows
-
-**Description:** Professional development workflows for Claude Code - Language-agnostic best practices, specialized agents, and quality assurance patterns for building production-ready software
-
-**Source:** `./backend`
-
----
-
-### dev-workflows-frontend
-
-**Description:** Professional frontend development workflows for Claude Code - React/TypeScript specialized agents, commands, and quality patterns for building production-ready web applications
-
-**Source:** `./frontend`
-
----
-
-## 1broseidon/marketplace
-
-**Marketplace ID:** `1broseidon-marketplace`  
-**Agent Plugins Count:** 1
-
-### fullstack-dev-team
-
-**Description:** Complete fullstack development team with specialized agents for frontend, backend, code review, QA, documentation, and UX design
-
-**Source:** `./fullstack-dev-team`
-
----
-
-## AgiFlow/aicode-toolkit
-
-**Marketplace ID:** `aicode-toolkit`  
-**Agent Plugins Count:** 1
-
-### aicode-develop
-
-**Description:** 🔨 Development Phase: Add features to existing projects and get design pattern guidance. Scaffold pages, components, services while following architectural patterns. Includes /edit-with-pattern slash command and 3 specialized agents (Architecture Review, Test Coverage, Migration Assistant) for complex tasks.
-
-**Tags:** `development`, `features`, `patterns`
-
-**Source:** `[object Object]`
-
----
-
-## aidenestelle/Aidens-claude-code-marketplace
-
-**Marketplace ID:** `aidenestelle-aidens-claude-code-marketplace`  
-**Agent Plugins Count:** 1
-
-### ai-development-workflow-system
-
-**Description:** AI-powered development workflow with GitHub integration, task orchestration, and specialized agents for planning, implementation, testing, and alignment validation
-
-**Source:** `./plugins/AI Development Workflow System`
-
----
-
 ## animalzinc/claude-plugins
 
 **Marketplace ID:** `animalzinc-claude-plugins`  
@@ -1891,6 +1241,32 @@ Total agent plugins found: **261**
 **Description:** Analyze interview transcripts with unlimited token limits and intelligent agent scaling
 
 **Source:** `./plugins/interview-transcript-analyzer`
+
+---
+
+## anthropics/claude-code
+
+**Marketplace ID:** `anthropic-claude-code`  
+**Agent Plugins Count:** 1
+
+### agent-sdk-dev
+
+**Description:** Development kit for working with the Claude Agent SDK
+
+**Source:** `./plugins/agent-sdk-dev`
+
+---
+
+## anthropics-claude/claude-code
+
+**Marketplace ID:** `anthropics-claude-claude-code`  
+**Agent Plugins Count:** 1
+
+### agent-sdk-dev
+
+**Description:** Development kit for working with the Claude Agent SDK
+
+**Source:** `./plugins/agent-sdk-dev`
 
 ---
 
@@ -1909,32 +1285,6 @@ Total agent plugins found: **261**
 
 ---
 
-## avxkim/personal-marketplace
-
-**Marketplace ID:** `avxkim-personal-marketplace`  
-**Agent Plugins Count:** 1
-
-### avx
-
-**Description:** My own set of agents, commands, hooks
-
-**Source:** `./plugin`
-
----
-
-## bgauryy/octocode-mcp
-
-**Marketplace ID:** `bgauryy-octocode-mcp`  
-**Agent Plugins Count:** 1
-
-### octocode-claude-plugin
-
-**Description:** Complete AI development team with 8 specialized agents for requirements gathering, architecture design, UX design, implementation, and QA
-
-**Source:** `./octocode-claude-plugin`
-
----
-
 ## blogic-cz/blogic-marketplace
 
 **Marketplace ID:** `blogic-cz-blogic-marketplace`  
@@ -1945,131 +1295,6 @@ Total agent plugins found: **261**
 **Description:** Base plugin by blogic
 
 **Source:** `./agent-kit`
-
----
-
-## classmethod/tsumiki
-
-**Marketplace ID:** `classmethod-tsumiki`  
-**Agent Plugins Count:** 1
-
-### tsumiki
-
-**Description:** AI-driven development toolkit for TDD and SDD workflows, providing comprehensive command templates and agents to enhance developer productivity with Claude Code
-
-**Source:** `./`
-
----
-
-## feiskyer/claude-code-settings
-
-**Marketplace ID:** `claude-code-settings`  
-**Agent Plugins Count:** 1
-
-### claude-code-settings
-
-**Description:** Claude Code settings, commands and agents for vibe coding
-
-**Source:** `./`
-
----
-
-## davila7/claude-code-templates
-
-**Marketplace ID:** `claude-code-templates`  
-**Agent Plugins Count:** 1
-
-### supabase-toolkit
-
-**Description:** Complete Supabase workflow with specialized commands, data engineering agents, and MCP integrations
-
-**Source:** `./`
-
----
-
-## amitpatole/claude-genkit-plugin
-
-**Marketplace ID:** `claude-genkit-plugin`  
-**Agent Plugins Count:** 1
-
-### genkit-starter-kits
-
-**Description:** Complete starter templates for common use cases - chatbots, RAG apps, agents, multi-modal apps, and more
-
-**Source:** `./plugins/genkit-starter-kits`
-
----
-
-## CodeGlide/codeglide-agents
-
-**Marketplace ID:** `codeglide-codeglide-agents`  
-**Agent Plugins Count:** 1
-
-### CodeGlide-mcp-server-generator
-
-**Description:** Production-ready MCP server generator with comprehensive security scanning, multi-language support (Go, Python, TypeScript, Java, JavaScript), automatic Swagger generation, API migration (OpenAPI 2.0→3.0), containerized deployment workflows, GitHub Actions CI/CD pipelines, and modular agentic architecture with intelligent context management
-
-**Tags:** `mcp`, `api`, `openapi`, `swagger`, `codegen`, `docker`, `kubernetes`, `security`, `golang`, `python`, `typescript`, `ci-cd`, `github-actions`, `agentic`, `context-management`
-
-**Source:** `./`
-
----
-
-## contextgraph/claude-code-plugin
-
-**Marketplace ID:** `contextgraph-claude-code-plugin`  
-**Agent Plugins Count:** 1
-
-### contextgraph
-
-**Description:** A living planning layer that gets smarter with every execution. Your context graph transforms vibe-like ideas into executable plans that improve themselves.
-
-**Tags:** `planning`, `task-management`, `productivity`, `ai`, `mcp`, `development`, `software-engineering`, `context`, `agentic`, `workflow`
-
-**Source:** `./plugins/contextgraph`
-
----
-
-## Dev-GOM/claude-code-marketplace
-
-**Marketplace ID:** `dev-gom-claude-code-marketplace`  
-**Agent Plugins Count:** 1
-
-### ai-pair-programming
-
-**Description:** Complete AI pair programming suite with slash commands, expert agents, and intelligent hooks
-
-**Source:** `./plugins/ai-pair-programming`
-
----
-
-## doozMen/claude-agents-cli
-
-**Marketplace ID:** `doozmen-claude-agents-cli`  
-**Agent Plugins Count:** 1
-
-### swift-agents-plugin
-
-**Description:** 45 production-ready AI agents for Claude Code - Swift, testing, documentation, CI/CD, Firebase, and more
-
-**Tags:** `agents`, `swift`, `ios`, `testing`, `documentation`, `devops`, `cli`, `mcp`
-
-**Source:** `./.claude-plugin/plugin.json`
-
----
-
-## doozMen/swift-agents-plugin
-
-**Marketplace ID:** `doozmen-swift-agents-plugin`  
-**Agent Plugins Count:** 1
-
-### swift-agents-plugin
-
-**Description:** 45 production-ready AI agents for Claude Code - Swift, testing, documentation, CI/CD, Firebase, and more
-
-**Tags:** `agents`, `swift`, `ios`, `testing`, `documentation`, `devops`, `cli`, `mcp`
-
-**Source:** `./.claude-plugin/plugin.json`
 
 ---
 
@@ -2086,182 +1311,16 @@ Total agent plugins found: **261**
 
 ---
 
-## EveryInc/every-marketplace
+## cexll/myclaude
 
-**Marketplace ID:** `every-marketplace`  
+**Marketplace ID:** `myclaude`  
 **Agent Plugins Count:** 1
 
-### compounding-engineering
+### advanced-ai-agents
 
-**Description:** AI-powered development tools that get smarter with every use. Make each unit of engineering work easier than the last. Includes 15 specialized agents and 6 commands.
+**Description:** Advanced AI agent for complex problem solving and deep analysis with GPT-5 integration
 
-**Tags:** `ai-powered`, `compounding-engineering`, `workflow-automation`, `code-review`, `quality`, `knowledge-management`
-
-**Source:** `./plugins/compounding-engineering`
-
----
-
-## FradSer/dotclaude
-
-**Marketplace ID:** `fradser-dotclaude`  
-**Agent Plugins Count:** 1
-
-### review
-
-**Description:** Comprehensive code review toolkit with specialized agents for quality, security, architecture, UX, and refactoring
-
-**Source:** `./plugins/code-review-toolkit`
-
----
-
-## gsornsen/mycelium
-
-**Marketplace ID:** `gsornsen-mycelium`  
-**Agent Plugins Count:** 1
-
-### mycelium-core
-
-**Description:** Mycelium distributed intelligence system with 130+ expert agents, dual-mode coordination (Redis/TaskQueue/Markdown), real-time pub/sub messaging, and durable workflows
-
-**Source:** `./plugins/mycelium-core`
-
----
-
-## hmcts/.claude
-
-**Marketplace ID:** `hmcts-claude`  
-**Agent Plugins Count:** 1
-
-### expressjs-monorepo
-
-**Description:** HMCTS ExpressJS monorepo development workflow with GOV.UK standards, specialized agents, and quality hooks
-
-**Source:** `./expressjs-monorepo`
-
----
-
-## hmps/claude-marketplace
-
-**Marketplace ID:** `hmps-claude-marketplace`  
-**Agent Plugins Count:** 1
-
-### compounding-engineering
-
-**Description:** AI-powered development tools that get smarter with every use. Make each unit of engineering work easier than the last. Includes 15 specialized agents and 6 commands.
-
-**Tags:** `ai-powered`, `compounding-engineering`, `workflow-automation`, `code-review`, `quality`, `knowledge-management`
-
-**Source:** `./plugins/compounding-engineering`
-
----
-
-## jamsajones/claude-squad
-
-**Marketplace ID:** `jamsajones-claude-squad`  
-**Agent Plugins Count:** 1
-
-### claude-squad
-
-**Description:** A comprehensive suite of specialized agents with mandatory delegation enforcement for software development
-
-**Source:** `./`
-
----
-
-## jeffh/claude-plugins
-
-**Marketplace ID:** `jeffh-claude-plugins`  
-**Agent Plugins Count:** 1
-
-### humanlayer
-
-**Description:** Commands and agents from humanlayer, but without the thought syncing
-
-**Source:** `./humanlayer`
-
----
-
-## kodflow/.repository
-
-**Marketplace ID:** `kodflow-repository`  
-**Agent Plugins Count:** 1
-
-### go-development-tools
-
-**Description:** Expert agents for Go development: DDD Architect (ultra-strict structure), Code Reviewer (zero tolerance), Performance Optimizer (pprof master), and Go Expert (1.25+ features)
-
-**Tags:** `go`, `golang`, `ddd`, `code-review`, `performance`, `architecture`
-
-**Source:** `./plugins/golang`
-
----
-
-## kylesnowschwartz/SimpleClaude
-
-**Marketplace ID:** `kylesnowschwartz-simpleclaude`  
-**Agent Plugins Count:** 1
-
-### simpleclaude
-
-**Description:** Core SimpleClaude framework with 4+1 intent-based commands and 6 specialized agents for token-efficient execution
-
-**Source:** `./plugins/simpleclaude`
-
----
-
-## lbildzinkas/claude-code-market-place
-
-**Marketplace ID:** `lbildzinkas-claude-code-market-place`  
-**Agent Plugins Count:** 1
-
-### fullstack-dev-suite
-
-**Description:** Comprehensive fullstack development plugin with FastAPI/Python backend and React/Vite/Tailwind frontend conventions, featuring 82+ specialized AI agents and custom development workflows
-
-**Source:** `./plugins/fullstack-dev-suite`
-
----
-
-## leobrival/blog-kit
-
-**Marketplace ID:** `leobrival-blog-kit`  
-**Agent Plugins Count:** 1
-
-### blog-kit
-
-**Description:** Generate SEO/GEO-optimized blog articles using JSON templates and AI agents
-
-**Tags:** `content`, `seo`, `geo`, `marketing`, `research`, `templates`
-
-**Source:** `./plugin`
-
----
-
-## lpasqualis/lpclaude
-
-**Marketplace ID:** `lpasqualis-lpclaude`  
-**Agent Plugins Count:** 1
-
-### lpclaude-config
-
-**Description:** Comprehensive Claude Code configuration with agents, slash commands, workers, hooks, and utilities for Git automation, documentation, job queues, and code quality checks
-
-**Tags:** `automation`, `git`, `documentation`, `agents`, `workflows`, `job-queue`, `security`, `code-quality`
-
-**Source:** `./`
-
----
-
-## Melvynx/aiblueprint
-
-**Marketplace ID:** `melvynx-aiblueprint`  
-**Agent Plugins Count:** 1
-
-### base
-
-**Description:** AIBlueprint base configuration with custom agents, slash commands, hooks, and productivity workflows for Claude Code
-
-**Source:** `./claude-code-config`
+**Source:** `./advanced-ai-agents/`
 
 ---
 
@@ -2280,19 +1339,6 @@ Total agent plugins found: **261**
 
 ---
 
-## nibzard/steel-marketplace
-
-**Marketplace ID:** `nibzard-steel-marketplace`  
-**Agent Plugins Count:** 1
-
-### steel-forge
-
-**Description:** Steel browser automation assistant for AI coding agents - create, debug, and optimize Steel projects
-
-**Source:** `./steel-forge`
-
----
-
 ## Parslee-ai/claude-code-plugins
 
 **Marketplace ID:** `parslee-ai-claude-code-plugins`  
@@ -2301,32 +1347,6 @@ Total agent plugins found: **261**
 ### neo
 
 **Description:** Multi-agent semantic reasoning system with persistent memory for code suggestions, architectural guidance, and optimization recommendations
-
-**Source:** `[object Object]`
-
----
-
-## phaezer/claude-mkt
-
-**Marketplace ID:** `phaezer-claude-mkt`  
-**Agent Plugins Count:** 1
-
-### ansible
-
-**Description:** Ansible engineering plugin for developing, reviewing, and securing Ansible automation with specialized agents for roles, playbooks, Jinja2 templates, and orchestration
-
-**Source:** `./plugins/ansible`
-
----
-
-## Piotr1215/aiverse
-
-**Marketplace ID:** `piotr1215-aiverse`  
-**Agent Plugins Count:** 1
-
-### ai-coreutils
-
-**Description:** Essential AI-augmented dev utilities (commands, agents, hooks)
 
 **Source:** `[object Object]`
 
@@ -2345,21 +1365,6 @@ Total agent plugins found: **261**
 
 ---
 
-## rbonestell/hyperclaude-nano
-
-**Marketplace ID:** `rbonestell-hyperclaude-nano`  
-**Agent Plugins Count:** 1
-
-### hc
-
-**Description:** Nano-sized framework with 7 specialized agents, 14 slash commands, and strict tool enforcement for optimal Claude Code usage
-
-**Tags:** `framework`, `agents`, `workflow`, `productivity`, `best-practices`
-
-**Source:** `./plugins/hyperclaude-nano`
-
----
-
 ## ruvnet/claude-flow
 
 **Marketplace ID:** `ruvnet-claude-flow`  
@@ -2370,32 +1375,6 @@ Total agent plugins found: **261**
 **Description:** Enterprise AI agent orchestration plugin with 150+ commands, 74+ specialized agents, SPARC methodology, swarm coordination, GitHub integration, and neural training capabilities
 
 **Tags:** `productivity`, `automation`, `ai`, `agents`, `swarm`, `coordination`, `sparc`, `github`, `neural-network`, `enterprise`
-
-**Source:** `./`
-
----
-
-## schpet/jjagent
-
-**Marketplace ID:** `schpet-jjagent`  
-**Agent Plugins Count:** 1
-
-### jjagent
-
-**Description:** setup hooks for jjagent
-
-**Source:** `./`
-
----
-
-## schuyler/duck-soup
-
-**Marketplace ID:** `schuyler-duck-soup`  
-**Agent Plugins Count:** 1
-
-### dev
-
-**Description:** Comprehensive development workflow with quality gates and specialized agents
 
 **Source:** `./`
 
@@ -2414,6 +1393,21 @@ Total agent plugins found: **261**
 
 ---
 
+## TechNickAI/ai-coding-config
+
+**Marketplace ID:** `technickai-ai-coding-config`  
+**Agent Plugins Count:** 1
+
+### git-commits
+
+**Description:** Git commit standards and PR workflows with commit message generator agent
+
+**Tags:** `git`, `workflow`, `commits`
+
+**Source:** `./plugins/git-commits`
+
+---
+
 ## thc1006/telecom-ops-claude-code-plugins
 
 **Marketplace ID:** `thc1006-telecom-ops-claude-code-plugins`  
@@ -2424,19 +1418,6 @@ Total agent plugins found: **261**
 **Description:** O-RAN/Nephio demo plugin (commands, agent, hooks, MCP stub).
 
 **Source:** `./telecom-ops`
-
----
-
-## TokenRollAI/cc-plugin
-
-**Marketplace ID:** `tokenrollai-cc-plugin`  
-**Agent Plugins Count:** 1
-
-### tr
-
-**Description:** TokenRoll custom commands and agents for Claude Code
-
-**Source:** `./`
 
 ---
 
@@ -2453,19 +1434,6 @@ Total agent plugins found: **261**
 
 ---
 
-## udecode/dotai
-
-**Marketplace ID:** `udecode-dotai`  
-**Agent Plugins Count:** 1
-
-### ctx
-
-**Description:** Context-aware AGENTS.md generator for task-specific rule selection
-
-**Source:** `./.claude-plugin/plugins/ctx`
-
----
-
 ## WarrenZhu050413/Warren-Claude-Code-Plugin-Marketplace
 
 **Marketplace ID:** `warrenzhu050413-warren-claude-code-plugin-marketplace`  
@@ -2476,19 +1444,6 @@ Total agent plugins found: **261**
 **Description:** Hybrid context management combining Agent Skills (model-invoked) + deterministic snippets (pattern-based). Includes Anthropic skills and custom meta-skills.
 
 **Source:** `./claude-context-orchestrator`
-
----
-
-## webdevtodayjason/titanium-plugins
-
-**Marketplace ID:** `webdevtodayjason-titanium-plugins`  
-**Agent Plugins Count:** 1
-
-### titanium-toolkit
-
-**Description:** Complete development toolkit with voice announcements, 16 builder agents, and Pieces integration
-
-**Source:** `./plugins/titanium-toolkit`
 
 ---
 
@@ -2513,19 +1468,6 @@ Total agent plugins found: **261**
 ### AgileFlow
 
 **Description:** Universal agile/docs-as-code system combining Scrum, Kanban, ADRs, and docs-as-code. Framework-agnostic command pack for managing epics, stories, decisions, research, and multi-agent collaboration with automation features.
-
-**Source:** `./`
-
----
-
-## zpaper-com/ClaudeKit
-
-**Marketplace ID:** `zpaper-com-claudekit`  
-**Agent Plugins Count:** 1
-
-### enterprise-complete
-
-**Description:** Enterprise-grade development with all agents, commands, and quality controls
 
 **Source:** `./`
 

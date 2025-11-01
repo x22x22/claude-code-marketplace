@@ -1,7 +1,10 @@
-#!/usr/bin/env tsx
+#!/usr/bin/env node
 /**
  * Script to identify all plugins with "agent" from all marketplaces
  * Reads marketplaces.json and fetches each marketplace's manifest to find agent plugins
+ * 
+ * Usage: npm run list-agent-plugins
+ * Or: npx tsx scripts/list-agent-plugins.ts
  */
 
 import * as fs from 'fs';
@@ -56,7 +59,9 @@ async function fetchMarketplaceManifest(url: string): Promise<MarketplaceManifes
 
 function containsAgent(text: string | undefined): boolean {
   if (!text) return false;
-  return text.toLowerCase().includes('agent');
+  // Use word boundary matching to avoid false positives with substrings
+  // e.g., "management" should not match "agent"
+  return /\bagent\b/i.test(text);
 }
 
 function hasAgentInPlugin(plugin: Plugin): boolean {
@@ -161,6 +166,11 @@ async function main() {
   console.log(`\n\nReport saved to: ${outputPath}`);
 }
 
+/**
+ * Convert text to URL-safe slug for markdown anchors
+ * Note: This implementation only handles ASCII characters.
+ * Unicode characters will be converted to hyphens.
+ */
 function slugify(text: string): string {
   return text
     .toLowerCase()
