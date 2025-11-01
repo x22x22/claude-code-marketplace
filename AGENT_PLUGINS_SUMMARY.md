@@ -8,23 +8,25 @@ Based on the `.claude-plugin/marketplaces.json` file in this project, we have id
 
 ## 统计数据 / Statistics
 
-- **总市场数量 / Total Marketplaces**: 184
-- **成功处理的市场 / Successfully Processed**: 176
-- **包含 Agent 插件的市场数量 / Marketplaces with Agent Plugins**: 68
-- **Agent 插件总数 / Total Agent Plugins Found**: **261**
+- **总市场数量 / Total Marketplaces**: 174
+- **成功处理的市场 / Successfully Processed**: 168
+- **包含 Agent 插件的市场数量 / Marketplaces with Agent Plugins**: 45
+- **Agent 插件总数 / Total Agent Plugins Found**: **163**
+
+*Note: Uses word-boundary matching (`\bagent\b`) to avoid false positives like "management"*
 
 ## 前 10 个市场（按 Agent 插件数量排序）/ Top 10 Marketplaces (by Agent Plugin Count)
 
-1. **ccplugins/awesome-claude-code-plugins** - 76 agent plugins
-2. **ananddtyagi/claude-code-marketplace** - 74 agent plugins
-3. **jmanhype/claude-code-plugin-marketplace** - 10 agent plugins
-4. **jmanhype/claude-code-plugins** - 10 agent plugins
-5. **aws-solutions-library-samples/guidance-for-claude-code-with-amazon-bedrock** - 8 agent plugins
-6. **kivilaid/plugin-marketplace** - 7 agent plugins
-7. **anthropics/claude-code** - 4 agent plugins
-8. **henkisdabro/claudecode-marketplace** - 4 agent plugins
-9. **anthropics-claude/claude-code** - 3 agent plugins
-10. **otrebu/agents** - 3 agent plugins
+1. **ccplugins/awesome-claude-code-plugins** - 66 agent plugins
+2. **ananddtyagi/claude-code-marketplace** - 65 agent plugins
+3. **henkisdabro/claudecode-marketplace** - 3 agent plugins
+4. **jmanhype/claude-code-plugin-marketplace** - 3 agent plugins
+5. **jmanhype/claude-code-plugins** - 3 agent plugins
+6. **kivilaid/plugin-marketplace** - 3 agent plugins
+7. **wshobson/agents** - 2 agent plugins
+8. **animalzinc/claude-plugins** - 1 agent plugin
+9. **anthropics/claude-code** - 1 agent plugin
+10. **anthropics-claude/claude-code** - 1 agent plugin
 
 ## 报告文件 / Report Files
 
