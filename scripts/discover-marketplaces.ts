@@ -182,8 +182,9 @@ async function discoverMarketplaces(options: {
 
       console.log(`\n🔍 Checking: ${item.repository.full_name}`);
 
-      // Construct manifest URL
-      const manifestUrl = `https://raw.githubusercontent.com/${item.repository.full_name}/${item.repository.default_branch}/.claude-plugin/marketplace.json`;
+      // Construct manifest URL with fallback for default branch
+      const defaultBranch = item.repository.default_branch || 'main';
+      const manifestUrl = `https://raw.githubusercontent.com/${item.repository.full_name}/${defaultBranch}/.claude-plugin/marketplace.json`;
 
       // Validate manifest
       const validation = await validateManifest(manifestUrl);
@@ -262,7 +263,8 @@ async function discoverMarketplaces(options: {
 // CLI
 const args = process.argv.slice(2);
 const dryRun = !args.includes('--no-dry-run');
-const maxResults = parseInt(args.find(arg => arg.startsWith('--max='))?.split('=')[1] || '100');
+const maxArg = args.find(arg => arg.startsWith('--max='))?.split('=')[1] || '100';
+const maxResults = parseInt(maxArg, 10) || 100; // Default to 100 if NaN
 
 discoverMarketplaces({
   githubToken: process.env.GITHUB_TOKEN,
