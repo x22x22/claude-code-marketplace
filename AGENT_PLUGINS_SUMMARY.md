@@ -10,10 +10,30 @@ Based on the `.claude-plugin/marketplaces.json` file in this project, we have id
 
 - **总市场数量 / Total Marketplaces**: 174
 - **成功处理的市场 / Successfully Processed**: 168
-- **包含 Agent 插件的市场数量 / Marketplaces with Agent Plugins**: 45
-- **Agent 插件总数 / Total Agent Plugins Found**: **163**
+- **包含 Agent 插件的市场数量 / Marketplaces with Agent Plugins**: 61
+- **Agent 插件总数 / Total Agent Plugins Found**: **242**
 
-*Note: Uses word-boundary matching (`\bagent\b`) to avoid false positives like "management"*
+*Note: Uses word-boundary matching (`\bagents?\b`) to match both "agent" and "agents"*
+
+### 检测方法 / Detection Methods
+
+插件通过以下方式被识别为包含 agent:
+Plugins are identified as containing agents through:
+
+1. **元数据检测 / Metadata Detection**: 在插件的名称、描述、标签或关键词中包含 "agent" 或 "agents"
+   - Checking for "agent" or "agents" in plugin name, description, tags, or keywords
+
+2. **仓库结构扫描 / Repository Structure Scan** (有限支持 / Limited Support): 检查插件源代码目录中是否有 `agents` 文件夹
+   - Checking for `agents` folder in plugin source (may be limited by network restrictions)
+
+### 已知限制 / Known Limitations
+
+- 某些插件可能包含 agent 功能但未在元数据中声明 "agent" 关键词
+  - Some plugins may contain agent functionality but don't declare "agent" in metadata
+- 网络限制可能阻止仓库结构扫描
+  - Network restrictions may prevent repository structure scanning
+- 示例：`eyaltoledano/claude-task-master` 插件包含 `agents` 文件夹但元数据中未提及
+  - Example: `eyaltoledano/claude-task-master` has an `agents` folder but no "agent" in metadata
 
 ## 前 10 个市场（按 Agent 插件数量排序）/ Top 10 Marketplaces (by Agent Plugin Count)
 
