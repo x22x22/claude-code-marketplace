@@ -1,33 +1,36 @@
 # Agent Plugins Report
 
-Generated: 2025-11-01T13:26:13.103Z
+Generated: 2025-11-01T16:06:27.590Z
 
-Total agent plugins found: **242**
+Total agent plugins found: **386**
 
 ---
 
 ## Table of Contents
 
+- [kivilaid/plugin-marketplace](#kivilaid-plugin-marketplace) (69 plugins)
 - [ccplugins/awesome-claude-code-plugins](#ccplugins-awesome-claude-code-plugins) (68 plugins)
 - [ananddtyagi/claude-code-marketplace](#ananddtyagi-claude-code-marketplace) (66 plugins)
+- [wshobson/agents](#wshobson-agents) (65 plugins)
 - [jmanhype/claude-code-plugin-marketplace](#jmanhype-claude-code-plugin-marketplace) (9 plugins)
 - [jmanhype/claude-code-plugins](#jmanhype-claude-code-plugins) (9 plugins)
 - [aws-solutions-library-samples/guidance-for-claude-code-with-amazon-bedrock](#aws-solutions-library-samples-guidance-for-claude-code-with-amazon-bedrock) (8 plugins)
-- [kivilaid/plugin-marketplace](#kivilaid-plugin-marketplace) (7 plugins)
+- [amitpatole/claude-genkit-plugin](#amitpatole-claude-genkit-plugin) (7 plugins)
+- [animalzinc/claude-plugins](#animalzinc-claude-plugins) (4 plugins)
 - [anthropics/claude-code](#anthropics-claude-code) (4 plugins)
+- [dhofheinz/open-plugins](#dhofheinz-open-plugins) (4 plugins)
+- [cexll/myclaude](#cexll-myclaude) (4 plugins)
 - [anthropics-claude/claude-code](#anthropics-claude-claude-code) (3 plugins)
 - [henkisdabro/claudecode-marketplace](#henkisdabro-claudecode-marketplace) (3 plugins)
 - [otrebu/agents](#otrebu-agents) (3 plugins)
 - [TechNickAI/ai-coding-config](#technickai-ai-coding-config) (3 plugins)
-- [wshobson/agents](#wshobson-agents) (2 plugins)
+- [coinpaprika/claude-marketplace](#coinpaprika-claude-marketplace) (2 plugins)
 - [Dev-GOM/claude-code-marketplace](#dev-gom-claude-code-marketplace) (2 plugins)
 - [dotclaude/marketplace](#dotclaude-marketplace) (2 plugins)
-- [cexll/myclaude](#cexll-myclaude) (2 plugins)
 - [shinpr/claude-code-workflows](#shinpr-claude-code-workflows) (2 plugins)
 - [1broseidon/marketplace](#1broseidon-marketplace) (1 plugins)
 - [AgiFlow/aicode-toolkit](#agiflow-aicode-toolkit) (1 plugins)
 - [aidenestelle/Aidens-claude-code-marketplace](#aidenestelle-aidens-claude-code-marketplace) (1 plugins)
-- [animalzinc/claude-plugins](#animalzinc-claude-plugins) (1 plugins)
 - [avaloki108/claude-flow----web3](#avaloki108-claude-flow-web3) (1 plugins)
 - [avxkim/personal-marketplace](#avxkim-personal-marketplace) (1 plugins)
 - [bgauryy/octocode-mcp](#bgauryy-octocode-mcp) (1 plugins)
@@ -35,12 +38,12 @@ Total agent plugins found: **242**
 - [classmethod/tsumiki](#classmethod-tsumiki) (1 plugins)
 - [feiskyer/claude-code-settings](#feiskyer-claude-code-settings) (1 plugins)
 - [davila7/claude-code-templates](#davila7-claude-code-templates) (1 plugins)
-- [amitpatole/claude-genkit-plugin](#amitpatole-claude-genkit-plugin) (1 plugins)
 - [CodeGlide/codeglide-agents](#codeglide-codeglide-agents) (1 plugins)
 - [doozMen/claude-agents-cli](#doozmen-claude-agents-cli) (1 plugins)
 - [doozMen/swift-agents-plugin](#doozmen-swift-agents-plugin) (1 plugins)
 - [DustyWalker/claude-code-marketplace](#dustywalker-claude-code-marketplace) (1 plugins)
 - [EveryInc/every-marketplace](#everyinc-every-marketplace) (1 plugins)
+- [eyaltoledano/claude-task-master](#eyaltoledano-claude-task-master) (1 plugins)
 - [FradSer/dotclaude](#fradser-dotclaude) (1 plugins)
 - [gsornsen/mycelium](#gsornsen-mycelium) (1 plugins)
 - [hmcts/.claude](#hmcts-claude) (1 plugins)
@@ -72,7 +75,691 @@ Total agent plugins found: **242**
 - [webdevtodayjason/titanium-plugins](#webdevtodayjason-titanium-plugins) (1 plugins)
 - [witt3rd/claude-plugins](#witt3rd-claude-plugins) (1 plugins)
 - [xloxn69/AgileFlow](#xloxn69-agileflow) (1 plugins)
+- [ZephyrDeng/cc-plugins](#zephyrdeng-cc-plugins) (1 plugins)
 - [zpaper-com/ClaudeKit](#zpaper-com-claudekit) (1 plugins)
+
+---
+
+## kivilaid/plugin-marketplace
+
+**Marketplace ID:** `kivilaid-plugin-marketplace`  
+**Agent Plugins Count:** 69
+
+### example-full-featured
+
+**Description:** Full-featured productivity plugin with Git workflow automation, code review agents, test generation, validation hooks, and example MCP server
+
+**Tags:** `git`, `productivity`, `automation`, `workflow`
+
+**Source:** `./plugins/example-full-featured`
+
+---
+
+### agent-sdk-dev
+
+**Description:** Development kit for working with the Claude Agent SDK
+
+**Source:** `./plugins/agent-sdk-dev`
+
+---
+
+### pr-review-toolkit
+
+**Description:** Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification
+
+**Source:** `./plugins/pr-review-toolkit`
+
+---
+
+### feature-dev
+
+**Description:** Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review
+
+**Source:** `./plugins/feature-dev`
+
+---
+
+### code-documentation
+
+**Description:** Documentation generation, code explanation, and technical writing with automated doc generation and tutorial creation
+
+**Source:** `./plugins/code-documentation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### debugging-toolkit
+
+**Description:** Interactive debugging, developer experience optimization, and smart debugging workflows
+
+**Source:** `./plugins/debugging-toolkit`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### git-pr-workflows
+
+**Description:** Git workflow automation, pull request enhancement, and team onboarding processes
+
+**Source:** `./plugins/git-pr-workflows`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### backend-development
+
+**Description:** Backend API design, GraphQL architecture, and test-driven backend development
+
+**Source:** `./plugins/backend-development`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### frontend-mobile-development
+
+**Description:** Frontend UI development and mobile application implementation across platforms
+
+**Source:** `./plugins/frontend-mobile-development`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### full-stack-orchestration
+
+**Description:** End-to-end feature orchestration with testing, security, performance, and deployment
+
+**Source:** `./plugins/full-stack-orchestration`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### unit-testing
+
+**Description:** Unit and integration test automation for Python and JavaScript with debugging support
+
+**Source:** `./plugins/unit-testing`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### tdd-workflows
+
+**Description:** Test-driven development methodology with red-green-refactor cycles and code review
+
+**Source:** `./plugins/tdd-workflows`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### code-review-ai
+
+**Description:** AI-powered architectural review and code quality analysis
+
+**Source:** `./plugins/code-review-ai`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### code-refactoring
+
+**Description:** Code cleanup, refactoring automation, and technical debt management with context restoration
+
+**Source:** `./plugins/code-refactoring`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### dependency-management
+
+**Description:** Dependency auditing, version management, and security vulnerability scanning
+
+**Source:** `./plugins/dependency-management`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### error-debugging
+
+**Description:** Error analysis, trace debugging, and multi-agent problem diagnosis
+
+**Source:** `./plugins/error-debugging`
+
+---
+
+### team-collaboration
+
+**Description:** Team workflows, issue management, standup automation, and developer experience optimization
+
+**Source:** `./plugins/team-collaboration`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### llm-application-dev
+
+**Description:** LLM application development, prompt engineering, and AI assistant optimization
+
+**Source:** `./plugins/llm-application-dev`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### agent-orchestration
+
+**Description:** Multi-agent system optimization, agent improvement workflows, and context management
+
+**Source:** `./plugins/agent-orchestration`
+
+---
+
+### context-management
+
+**Description:** Context persistence, restoration, and long-running conversation management
+
+**Source:** `./plugins/context-management`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### machine-learning-ops
+
+**Description:** ML model training pipelines, hyperparameter tuning, model deployment automation, experiment tracking, and MLOps workflows
+
+**Source:** `./plugins/machine-learning-ops`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### data-engineering
+
+**Description:** ETL pipeline construction, data warehouse design, batch processing workflows, and data-driven feature development
+
+**Source:** `./plugins/data-engineering`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### incident-response
+
+**Description:** Production incident management, triage workflows, and automated incident resolution
+
+**Source:** `./plugins/incident-response`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### error-diagnostics
+
+**Description:** Error tracing, root cause analysis, and smart debugging for production systems
+
+**Source:** `./plugins/error-diagnostics`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### distributed-debugging
+
+**Description:** Distributed system tracing and debugging across microservices
+
+**Source:** `./plugins/distributed-debugging`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### observability-monitoring
+
+**Description:** Metrics collection, logging infrastructure, distributed tracing, SLO implementation, and monitoring dashboards
+
+**Source:** `./plugins/observability-monitoring`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### deployment-strategies
+
+**Description:** Deployment patterns, rollback automation, and infrastructure templates
+
+**Source:** `./plugins/deployment-strategies`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### deployment-validation
+
+**Description:** Pre-deployment checks, configuration validation, and deployment readiness assessment
+
+**Source:** `./plugins/deployment-validation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### kubernetes-operations
+
+**Description:** Kubernetes manifest generation, networking configuration, security policies, observability setup, GitOps workflows, and auto-scaling
+
+**Source:** `./plugins/kubernetes-operations`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### cloud-infrastructure
+
+**Description:** Cloud architecture design for AWS/Azure/GCP, Kubernetes cluster configuration, Terraform infrastructure-as-code, hybrid cloud networking, and multi-cloud cost optimization
+
+**Source:** `./plugins/cloud-infrastructure`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### cicd-automation
+
+**Description:** CI/CD pipeline configuration, GitHub Actions/GitLab CI workflow setup, and automated deployment pipeline orchestration
+
+**Source:** `./plugins/cicd-automation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### application-performance
+
+**Description:** Application profiling, performance optimization, and observability for frontend and backend systems
+
+**Source:** `./plugins/application-performance`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### database-cloud-optimization
+
+**Description:** Database query optimization, cloud cost optimization, and scalability improvements
+
+**Source:** `./plugins/database-cloud-optimization`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### comprehensive-review
+
+**Description:** Multi-perspective code analysis covering architecture, security, and best practices
+
+**Source:** `./plugins/comprehensive-review`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### performance-testing-review
+
+**Description:** Performance analysis, test coverage review, and AI-powered code quality assessment
+
+**Source:** `./plugins/performance-testing-review`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### framework-migration
+
+**Description:** Framework updates, migration planning, and architectural transformation workflows
+
+**Source:** `./plugins/framework-migration`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### codebase-cleanup
+
+**Description:** Technical debt reduction, dependency updates, and code refactoring automation
+
+**Source:** `./plugins/codebase-cleanup`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### database-design
+
+**Description:** Database architecture, schema design, and SQL optimization for production systems
+
+**Source:** `./plugins/database-design`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### database-migrations
+
+**Description:** Database migration automation, observability, and cross-database migration strategies
+
+**Source:** `./plugins/database-migrations`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### security-scanning
+
+**Description:** SAST analysis, dependency vulnerability scanning, OWASP Top 10 compliance, container security scanning, and automated security hardening
+
+**Source:** `./plugins/security-scanning`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### security-compliance
+
+**Description:** SOC2, HIPAA, and GDPR compliance validation, secrets scanning, compliance checklists, and regulatory documentation
+
+**Source:** `./plugins/security-compliance`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### backend-api-security
+
+**Description:** API security hardening, authentication implementation, authorization patterns, rate limiting, and input validation
+
+**Source:** `./plugins/backend-api-security`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### frontend-mobile-security
+
+**Description:** XSS prevention, CSRF protection, content security policies, mobile app security, and secure storage patterns
+
+**Source:** `./plugins/frontend-mobile-security`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### data-validation-suite
+
+**Description:** Schema validation, data quality monitoring, streaming validation pipelines, and input validation for backend APIs
+
+**Source:** `./plugins/data-validation-suite`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### api-scaffolding
+
+**Description:** REST and GraphQL API scaffolding, framework selection, backend architecture, and API generation
+
+**Source:** `./plugins/api-scaffolding`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### api-testing-observability
+
+**Description:** API testing automation, request mocking, OpenAPI documentation generation, observability setup, and monitoring
+
+**Source:** `./plugins/api-testing-observability`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### seo-content-creation
+
+**Description:** SEO content writing, planning, and quality auditing with E-E-A-T optimization
+
+**Source:** `./plugins/seo-content-creation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### seo-technical-optimization
+
+**Description:** Technical SEO optimization including meta tags, keywords, structure, and featured snippets
+
+**Source:** `./plugins/seo-technical-optimization`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### seo-analysis-monitoring
+
+**Description:** Content freshness analysis, cannibalization detection, and authority building for SEO
+
+**Source:** `./plugins/seo-analysis-monitoring`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### documentation-generation
+
+**Description:** OpenAPI specification generation, Mermaid diagram creation, tutorial writing, API reference documentation
+
+**Source:** `./plugins/documentation-generation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### multi-platform-apps
+
+**Description:** Cross-platform application development coordinating web, iOS, Android, and desktop implementations
+
+**Source:** `./plugins/multi-platform-apps`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### business-analytics
+
+**Description:** Business metrics analysis, KPI tracking, financial reporting, and data-driven decision making
+
+**Source:** `./plugins/business-analytics`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### hr-legal-compliance
+
+**Description:** HR policy documentation, legal compliance templates (GDPR/SOC2/HIPAA), employment contracts, and regulatory documentation
+
+**Source:** `./plugins/hr-legal-compliance`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### customer-sales-automation
+
+**Description:** Customer support workflow automation, sales pipeline management, email campaigns, and CRM integration
+
+**Source:** `./plugins/customer-sales-automation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### content-marketing
+
+**Description:** Content marketing strategy, web research, and information synthesis for marketing operations
+
+**Source:** `./plugins/content-marketing`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### blockchain-web3
+
+**Description:** Smart contract development with Solidity, DeFi protocol implementation, NFT platforms, and Web3 application architecture
+
+**Source:** `./plugins/blockchain-web3`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### quantitative-trading
+
+**Description:** Quantitative analysis, algorithmic trading strategies, financial modeling, portfolio risk management, and backtesting
+
+**Source:** `./plugins/quantitative-trading`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### payment-processing
+
+**Description:** Payment gateway integration with Stripe, PayPal, checkout flow implementation, subscription billing, and PCI compliance
+
+**Source:** `./plugins/payment-processing`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### game-development
+
+**Description:** Unity game development with C# scripting, Minecraft server plugin development with Bukkit/Spigot APIs
+
+**Source:** `./plugins/game-development`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### accessibility-compliance
+
+**Description:** WCAG accessibility auditing, compliance validation, UI testing for screen readers, keyboard navigation, and inclusive design
+
+**Source:** `./plugins/accessibility-compliance`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### python-development
+
+**Description:** Modern Python development with Python 3.12+, Django, FastAPI, async patterns, and production best practices
+
+**Source:** `./plugins/python-development`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### javascript-typescript
+
+**Description:** JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks
+
+**Source:** `./plugins/javascript-typescript`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### systems-programming
+
+**Description:** Systems programming with Rust, Go, C, and C++ for performance-critical and low-level development
+
+**Source:** `./plugins/systems-programming`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### jvm-languages
+
+**Description:** JVM language development including Java, Scala, and C# with enterprise patterns and frameworks
+
+**Source:** `./plugins/jvm-languages`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### web-scripting
+
+**Description:** Web scripting with PHP and Ruby for web applications, CMS development, and backend services
+
+**Source:** `./plugins/web-scripting`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### functional-programming
+
+**Description:** Functional programming with Elixir, OTP patterns, Phoenix framework, and distributed systems
+
+**Source:** `./plugins/functional-programming`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### arm-cortex-microcontrollers
+
+**Description:** ARM Cortex-M firmware development for Teensy, STM32, nRF52, and SAMD with peripheral drivers and memory safety patterns
+
+**Source:** `./plugins/arm-cortex-microcontrollers`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### shell-scripting
+
+**Description:** Production-grade Bash scripting with defensive programming, POSIX compliance, and comprehensive testing
+
+**Source:** `./plugins/shell-scripting`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### supabase-toolkit
+
+**Description:** Complete Supabase workflow with specialized commands, data engineering agents, and MCP integrations
+
+**Source:** `./plugins/davila7-claude-code-templates`
 
 ---
 
@@ -1158,6 +1845,657 @@ Total agent plugins found: **242**
 
 ---
 
+## wshobson/agents
+
+**Marketplace ID:** `agents-marketplace`  
+**Agent Plugins Count:** 65
+
+### code-documentation
+
+**Description:** Documentation generation, code explanation, and technical writing with automated doc generation and tutorial creation
+
+**Source:** `./plugins/code-documentation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### debugging-toolkit
+
+**Description:** Interactive debugging, developer experience optimization, and smart debugging workflows
+
+**Source:** `./plugins/debugging-toolkit`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### git-pr-workflows
+
+**Description:** Git workflow automation, pull request enhancement, and team onboarding processes
+
+**Source:** `./plugins/git-pr-workflows`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### backend-development
+
+**Description:** Backend API design, GraphQL architecture, and test-driven backend development
+
+**Source:** `./plugins/backend-development`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### frontend-mobile-development
+
+**Description:** Frontend UI development and mobile application implementation across platforms
+
+**Source:** `./plugins/frontend-mobile-development`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### full-stack-orchestration
+
+**Description:** End-to-end feature orchestration with testing, security, performance, and deployment
+
+**Source:** `./plugins/full-stack-orchestration`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### unit-testing
+
+**Description:** Unit and integration test automation for Python and JavaScript with debugging support
+
+**Source:** `./plugins/unit-testing`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### tdd-workflows
+
+**Description:** Test-driven development methodology with red-green-refactor cycles and code review
+
+**Source:** `./plugins/tdd-workflows`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### code-review-ai
+
+**Description:** AI-powered architectural review and code quality analysis
+
+**Source:** `./plugins/code-review-ai`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### code-refactoring
+
+**Description:** Code cleanup, refactoring automation, and technical debt management with context restoration
+
+**Source:** `./plugins/code-refactoring`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### dependency-management
+
+**Description:** Dependency auditing, version management, and security vulnerability scanning
+
+**Source:** `./plugins/dependency-management`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### error-debugging
+
+**Description:** Error analysis, trace debugging, and multi-agent problem diagnosis
+
+**Source:** `./plugins/error-debugging`
+
+---
+
+### team-collaboration
+
+**Description:** Team workflows, issue management, standup automation, and developer experience optimization
+
+**Source:** `./plugins/team-collaboration`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### llm-application-dev
+
+**Description:** LLM application development, prompt engineering, and AI assistant optimization
+
+**Source:** `./plugins/llm-application-dev`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### agent-orchestration
+
+**Description:** Multi-agent system optimization, agent improvement workflows, and context management
+
+**Source:** `./plugins/agent-orchestration`
+
+---
+
+### context-management
+
+**Description:** Context persistence, restoration, and long-running conversation management
+
+**Source:** `./plugins/context-management`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### machine-learning-ops
+
+**Description:** ML model training pipelines, hyperparameter tuning, model deployment automation, experiment tracking, and MLOps workflows
+
+**Source:** `./plugins/machine-learning-ops`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### data-engineering
+
+**Description:** ETL pipeline construction, data warehouse design, batch processing workflows, and data-driven feature development
+
+**Source:** `./plugins/data-engineering`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### incident-response
+
+**Description:** Production incident management, triage workflows, and automated incident resolution
+
+**Source:** `./plugins/incident-response`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### error-diagnostics
+
+**Description:** Error tracing, root cause analysis, and smart debugging for production systems
+
+**Source:** `./plugins/error-diagnostics`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### distributed-debugging
+
+**Description:** Distributed system tracing and debugging across microservices
+
+**Source:** `./plugins/distributed-debugging`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### observability-monitoring
+
+**Description:** Metrics collection, logging infrastructure, distributed tracing, SLO implementation, and monitoring dashboards
+
+**Source:** `./plugins/observability-monitoring`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### deployment-strategies
+
+**Description:** Deployment patterns, rollback automation, and infrastructure templates
+
+**Source:** `./plugins/deployment-strategies`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### deployment-validation
+
+**Description:** Pre-deployment checks, configuration validation, and deployment readiness assessment
+
+**Source:** `./plugins/deployment-validation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### kubernetes-operations
+
+**Description:** Kubernetes manifest generation, networking configuration, security policies, observability setup, GitOps workflows, and auto-scaling
+
+**Source:** `./plugins/kubernetes-operations`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### cloud-infrastructure
+
+**Description:** Cloud architecture design for AWS/Azure/GCP, Kubernetes cluster configuration, Terraform infrastructure-as-code, hybrid cloud networking, and multi-cloud cost optimization
+
+**Source:** `./plugins/cloud-infrastructure`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### cicd-automation
+
+**Description:** CI/CD pipeline configuration, GitHub Actions/GitLab CI workflow setup, and automated deployment pipeline orchestration
+
+**Source:** `./plugins/cicd-automation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### application-performance
+
+**Description:** Application profiling, performance optimization, and observability for frontend and backend systems
+
+**Source:** `./plugins/application-performance`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### database-cloud-optimization
+
+**Description:** Database query optimization, cloud cost optimization, and scalability improvements
+
+**Source:** `./plugins/database-cloud-optimization`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### comprehensive-review
+
+**Description:** Multi-perspective code analysis covering architecture, security, and best practices
+
+**Source:** `./plugins/comprehensive-review`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### performance-testing-review
+
+**Description:** Performance analysis, test coverage review, and AI-powered code quality assessment
+
+**Source:** `./plugins/performance-testing-review`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### framework-migration
+
+**Description:** Framework updates, migration planning, and architectural transformation workflows
+
+**Source:** `./plugins/framework-migration`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### codebase-cleanup
+
+**Description:** Technical debt reduction, dependency updates, and code refactoring automation
+
+**Source:** `./plugins/codebase-cleanup`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### database-design
+
+**Description:** Database architecture, schema design, and SQL optimization for production systems
+
+**Source:** `./plugins/database-design`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### database-migrations
+
+**Description:** Database migration automation, observability, and cross-database migration strategies
+
+**Source:** `./plugins/database-migrations`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### security-scanning
+
+**Description:** SAST analysis, dependency vulnerability scanning, OWASP Top 10 compliance, container security scanning, and automated security hardening
+
+**Source:** `./plugins/security-scanning`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### security-compliance
+
+**Description:** SOC2, HIPAA, and GDPR compliance validation, secrets scanning, compliance checklists, and regulatory documentation
+
+**Source:** `./plugins/security-compliance`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### backend-api-security
+
+**Description:** API security hardening, authentication implementation, authorization patterns, rate limiting, and input validation
+
+**Source:** `./plugins/backend-api-security`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### frontend-mobile-security
+
+**Description:** XSS prevention, CSRF protection, content security policies, mobile app security, and secure storage patterns
+
+**Source:** `./plugins/frontend-mobile-security`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### data-validation-suite
+
+**Description:** Schema validation, data quality monitoring, streaming validation pipelines, and input validation for backend APIs
+
+**Source:** `./plugins/data-validation-suite`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### api-scaffolding
+
+**Description:** REST and GraphQL API scaffolding, framework selection, backend architecture, and API generation
+
+**Source:** `./plugins/api-scaffolding`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### api-testing-observability
+
+**Description:** API testing automation, request mocking, OpenAPI documentation generation, observability setup, and monitoring
+
+**Source:** `./plugins/api-testing-observability`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### seo-content-creation
+
+**Description:** SEO content writing, planning, and quality auditing with E-E-A-T optimization
+
+**Source:** `./plugins/seo-content-creation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### seo-technical-optimization
+
+**Description:** Technical SEO optimization including meta tags, keywords, structure, and featured snippets
+
+**Source:** `./plugins/seo-technical-optimization`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### seo-analysis-monitoring
+
+**Description:** Content freshness analysis, cannibalization detection, and authority building for SEO
+
+**Source:** `./plugins/seo-analysis-monitoring`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### documentation-generation
+
+**Description:** OpenAPI specification generation, Mermaid diagram creation, tutorial writing, API reference documentation
+
+**Source:** `./plugins/documentation-generation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### multi-platform-apps
+
+**Description:** Cross-platform application development coordinating web, iOS, Android, and desktop implementations
+
+**Source:** `./plugins/multi-platform-apps`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### business-analytics
+
+**Description:** Business metrics analysis, KPI tracking, financial reporting, and data-driven decision making
+
+**Source:** `./plugins/business-analytics`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### hr-legal-compliance
+
+**Description:** HR policy documentation, legal compliance templates (GDPR/SOC2/HIPAA), employment contracts, and regulatory documentation
+
+**Source:** `./plugins/hr-legal-compliance`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### customer-sales-automation
+
+**Description:** Customer support workflow automation, sales pipeline management, email campaigns, and CRM integration
+
+**Source:** `./plugins/customer-sales-automation`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### content-marketing
+
+**Description:** Content marketing strategy, web research, and information synthesis for marketing operations
+
+**Source:** `./plugins/content-marketing`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### blockchain-web3
+
+**Description:** Smart contract development with Solidity, DeFi protocol implementation, NFT platforms, and Web3 application architecture
+
+**Source:** `./plugins/blockchain-web3`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### quantitative-trading
+
+**Description:** Quantitative analysis, algorithmic trading strategies, financial modeling, portfolio risk management, and backtesting
+
+**Source:** `./plugins/quantitative-trading`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### payment-processing
+
+**Description:** Payment gateway integration with Stripe, PayPal, checkout flow implementation, subscription billing, and PCI compliance
+
+**Source:** `./plugins/payment-processing`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### game-development
+
+**Description:** Unity game development with C# scripting, Minecraft server plugin development with Bukkit/Spigot APIs
+
+**Source:** `./plugins/game-development`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### accessibility-compliance
+
+**Description:** WCAG accessibility auditing, compliance validation, UI testing for screen readers, keyboard navigation, and inclusive design
+
+**Source:** `./plugins/accessibility-compliance`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### python-development
+
+**Description:** Modern Python development with Python 3.12+, Django, FastAPI, async patterns, and production best practices
+
+**Source:** `./plugins/python-development`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### javascript-typescript
+
+**Description:** JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks
+
+**Source:** `./plugins/javascript-typescript`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### systems-programming
+
+**Description:** Systems programming with Rust, Go, C, and C++ for performance-critical and low-level development
+
+**Source:** `./plugins/systems-programming`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### jvm-languages
+
+**Description:** JVM language development including Java, Scala, and C# with enterprise patterns and frameworks
+
+**Source:** `./plugins/jvm-languages`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### web-scripting
+
+**Description:** Web scripting with PHP and Ruby for web applications, CMS development, and backend services
+
+**Source:** `./plugins/web-scripting`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### functional-programming
+
+**Description:** Functional programming with Elixir, OTP patterns, Phoenix framework, and distributed systems
+
+**Source:** `./plugins/functional-programming`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### julia-development
+
+**Description:** Modern Julia development with Julia 1.10+, package management, scientific computing, high-performance numerical code, and production best practices
+
+**Source:** `./plugins/julia-development`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### arm-cortex-microcontrollers
+
+**Description:** ARM Cortex-M firmware development for Teensy, STM32, nRF52, and SAMD with peripheral drivers and memory safety patterns
+
+**Source:** `./plugins/arm-cortex-microcontrollers`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### shell-scripting
+
+**Description:** Production-grade Bash scripting with defensive programming, POSIX compliance, and comprehensive testing
+
+**Source:** `./plugins/shell-scripting`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
 ## jmanhype/claude-code-plugin-marketplace
 
 **Marketplace ID:** `jmanhype-claude-code-plugin-marketplace`  
@@ -1381,66 +2719,119 @@ Total agent plugins found: **242**
 
 ---
 
-## kivilaid/plugin-marketplace
+## amitpatole/claude-genkit-plugin
 
-**Marketplace ID:** `kivilaid-plugin-marketplace`  
+**Marketplace ID:** `claude-genkit-plugin`  
 **Agent Plugins Count:** 7
 
-### example-full-featured
+### genkit
 
-**Description:** Full-featured productivity plugin with Git workflow automation, code review agents, test generation, validation hooks, and example MCP server
+**Description:** Build production-ready AI applications with Firebase Genkit. Includes project initialization, flow templates, deployment tools, and an AI assistant specialized in Genkit development.
 
-**Tags:** `git`, `productivity`, `automation`, `workflow`
+**Source:** `./`
 
-**Source:** `./plugins/example-full-featured`
-
----
-
-### agent-sdk-dev
-
-**Description:** Development kit for working with the Claude Agent SDK
-
-**Source:** `./plugins/agent-sdk-dev`
+**Detection:** Found via repository scan (has agents folder)  
 
 ---
 
-### pr-review-toolkit
+### genkit-test-writer
 
-**Description:** Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification
+**Description:** Automatically generate comprehensive tests for Genkit flows with support for unit tests, integration tests, and end-to-end testing
 
-**Source:** `./plugins/pr-review-toolkit`
+**Source:** `./plugins/genkit-test-writer`
 
----
-
-### feature-dev
-
-**Description:** Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review
-
-**Source:** `./plugins/feature-dev`
+**Detection:** Found via repository scan (has agents folder)  
 
 ---
 
-### error-debugging
+### genkit-starter-kits
 
-**Description:** Error analysis, trace debugging, and multi-agent problem diagnosis
+**Description:** Complete starter templates for common use cases - chatbots, RAG apps, agents, multi-modal apps, and more
 
-**Source:** `./plugins/error-debugging`
-
----
-
-### agent-orchestration
-
-**Description:** Multi-agent system optimization, agent improvement workflows, and context management
-
-**Source:** `./plugins/agent-orchestration`
+**Source:** `./plugins/genkit-starter-kits`
 
 ---
 
-### supabase-toolkit
+### genkit-image
 
-**Description:** Complete Supabase workflow with specialized commands, data engineering agents, and MCP integrations
+**Description:** Comprehensive image processing for Genkit - generation, editing, analysis, optimization with Claude Vision, DALL-E, Stable Diffusion, and Sharp
 
-**Source:** `./plugins/davila7-claude-code-templates`
+**Source:** `./plugins/genkit-image`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### genkit-audio
+
+**Description:** Comprehensive audio processing for Genkit - generation, transcription, translation, speech synthesis with OpenAI Whisper, ElevenLabs, Google TTS, and FFmpeg
+
+**Source:** `./plugins/genkit-audio`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### genkit-video
+
+**Description:** Comprehensive video processing for Genkit - generation, editing, analysis, transcription with FFmpeg, Runway ML, and AI video tools
+
+**Source:** `./plugins/genkit-video`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### genkit-content-studio
+
+**Description:** Complete multi-modal content creation studio for Genkit - Generate blogs, social media, marketing content, videos, and more using Gemini, Claude, GPT, and specialized AI tools
+
+**Source:** `./plugins/genkit-content-studio`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+## animalzinc/claude-plugins
+
+**Marketplace ID:** `animalzinc-claude-plugins`  
+**Agent Plugins Count:** 4
+
+### blog-style-guide-creator
+
+**Description:** AI-powered editorial style guide generation from blog content and article compliance review system
+
+**Source:** `./plugins/blog-style-guide-creator`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### interactive-presentation-generator
+
+**Description:** Transform data and findings into self-contained interactive HTML presentations
+
+**Source:** `./plugins/interactive-presentation-generator`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### interview-transcript-analyzer
+
+**Description:** Analyze interview transcripts with unlimited token limits and intelligent agent scaling
+
+**Source:** `./plugins/interview-transcript-analyzer`
+
+---
+
+### content-library-auditor
+
+**Description:** Analyze WordPress XML, CMS JSON, or CSV exports for content insights
+
+**Source:** `./plugins/content-library-auditor`
+
+**Detection:** Found via repository scan (has agents folder)  
 
 ---
 
@@ -1478,6 +2869,92 @@ Total agent plugins found: **242**
 **Description:** Automated code review for pull requests using multiple specialized agents with confidence-based scoring to filter false positives
 
 **Source:** `./plugins/code-review`
+
+---
+
+## dhofheinz/open-plugins
+
+**Marketplace ID:** `dhofheinz-open-plugins`  
+**Agent Plugins Count:** 4
+
+### plugin-quickstart-generator
+
+**Description:** Generate production-ready Claude Code plugin structures for OpenPlugins marketplace with guided interactive setup
+
+**Source:** `./plugins/plugin-quickstart-generator`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### marketplace-validator-plugin
+
+**Description:** Comprehensive validation for Claude Code marketplaces and plugins with quality scoring, security scanning, and automated checks
+
+**Source:** `./plugins/marketplace-validator-plugin`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### git-commit-assistant
+
+**Description:** Intelligent git commit helper with semantic commit message generation, change analysis, and atomic commit guidance using conventional commits format
+
+**Source:** `./plugins/git-commit-assistant`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### 10x-fullstack-engineer
+
+**Description:** Elite full-stack engineering capabilities with expert-level development across frontend, backend, databases, and infrastructure. Includes architecture design, feature implementation, performance optimization, refactoring, debugging, and comprehensive code review.
+
+**Source:** `./plugins/10x-fullstack-engineer`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+## cexll/myclaude
+
+**Marketplace ID:** `myclaude`  
+**Agent Plugins Count:** 4
+
+### requirements-driven-development
+
+**Description:** Streamlined requirements-driven development workflow with 90% quality gates for practical feature implementation
+
+**Source:** `./requirements-driven-workflow/`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### bmad-agile-workflow
+
+**Description:** Full BMAD agile workflow with role-based agents (PO, Architect, SM, Dev, QA) and interactive approval gates
+
+**Source:** `./bmad-agile-workflow/`
+
+---
+
+### development-essentials
+
+**Description:** Essential development commands for coding, debugging, testing, optimization, and documentation
+
+**Source:** `./development-essentials/`
+
+**Detection:** Found via repository scan (has agents folder)  
+
+---
+
+### advanced-ai-agents
+
+**Description:** Advanced AI agent for complex problem solving and deep analysis with GPT-5 integration
+
+**Source:** `./advanced-ai-agents/`
 
 ---
 
@@ -1603,24 +3080,28 @@ Total agent plugins found: **242**
 
 ---
 
-## wshobson/agents
+## coinpaprika/claude-marketplace
 
-**Marketplace ID:** `agents-marketplace`  
+**Marketplace ID:** `coinpaprika-claude-marketplace`  
 **Agent Plugins Count:** 2
 
-### error-debugging
+### dexpaprika
 
-**Description:** Error analysis, trace debugging, and multi-agent problem diagnosis
+**Description:** Access comprehensive DeFi data from DexPaprika including DEXes, liquidity pools, tokens, and trading information across 26+ blockchains
 
-**Source:** `./plugins/error-debugging`
+**Source:** `./plugins/dexpaprika-claude-plugin`
+
+**Detection:** Found via repository scan (has agents folder)  
 
 ---
 
-### agent-orchestration
+### coinpaprika
 
-**Description:** Multi-agent system optimization, agent improvement workflows, and context management
+**Description:** Access comprehensive cryptocurrency market data from CoinPaprika including real-time prices, market metrics, historical data, and on-chain analytics for 8000+ cryptocurrencies
 
-**Source:** `./plugins/agent-orchestration`
+**Source:** `./plugins/coinpaprika-claude-plugin`
+
+**Detection:** Found via repository scan (has agents folder)  
 
 ---
 
@@ -1663,27 +3144,6 @@ Total agent plugins found: **242**
 **Description:** Multi-persona analysis framework using split-team principles with cognitive harmonics, productive disagreement, and 7 specialized persona agents for multidimensional problem solving.
 
 **Source:** `./plugins/personalities`
-
----
-
-## cexll/myclaude
-
-**Marketplace ID:** `myclaude`  
-**Agent Plugins Count:** 2
-
-### bmad-agile-workflow
-
-**Description:** Full BMAD agile workflow with role-based agents (PO, Architect, SM, Dev, QA) and interactive approval gates
-
-**Source:** `./bmad-agile-workflow/`
-
----
-
-### advanced-ai-agents
-
-**Description:** Advanced AI agent for complex problem solving and deep analysis with GPT-5 integration
-
-**Source:** `./advanced-ai-agents/`
 
 ---
 
@@ -1746,19 +3206,6 @@ Total agent plugins found: **242**
 **Description:** AI-powered development workflow with GitHub integration, task orchestration, and specialized agents for planning, implementation, testing, and alignment validation
 
 **Source:** `./plugins/AI Development Workflow System`
-
----
-
-## animalzinc/claude-plugins
-
-**Marketplace ID:** `animalzinc-claude-plugins`  
-**Agent Plugins Count:** 1
-
-### interview-transcript-analyzer
-
-**Description:** Analyze interview transcripts with unlimited token limits and intelligent agent scaling
-
-**Source:** `./plugins/interview-transcript-analyzer`
 
 ---
 
@@ -1855,19 +3302,6 @@ Total agent plugins found: **242**
 
 ---
 
-## amitpatole/claude-genkit-plugin
-
-**Marketplace ID:** `claude-genkit-plugin`  
-**Agent Plugins Count:** 1
-
-### genkit-starter-kits
-
-**Description:** Complete starter templates for common use cases - chatbots, RAG apps, agents, multi-modal apps, and more
-
-**Source:** `./plugins/genkit-starter-kits`
-
----
-
 ## CodeGlide/codeglide-agents
 
 **Marketplace ID:** `codeglide-codeglide-agents`  
@@ -1938,6 +3372,21 @@ Total agent plugins found: **242**
 **Tags:** `ai-powered`, `compounding-engineering`, `workflow-automation`, `code-review`, `quality`, `knowledge-management`
 
 **Source:** `./plugins/compounding-engineering`
+
+---
+
+## eyaltoledano/claude-task-master
+
+**Marketplace ID:** `eyaltoledano-claude-task-master`  
+**Agent Plugins Count:** 1
+
+### taskmaster
+
+**Description:** AI-powered task management system for ambitious development workflows with intelligent orchestration, complexity analysis, and automated coordination
+
+**Source:** `./packages/claude-code-plugin`
+
+**Detection:** Found via repository scan (has agents folder)  
 
 ---
 
@@ -2355,6 +3804,21 @@ Total agent plugins found: **242**
 **Description:** Universal agile/docs-as-code system combining Scrum, Kanban, ADRs, and docs-as-code. Framework-agnostic command pack for managing epics, stories, decisions, research, and multi-agent collaboration with automation features.
 
 **Source:** `./`
+
+---
+
+## ZephyrDeng/cc-plugins
+
+**Marketplace ID:** `zephyrdeng-cc-plugins`  
+**Agent Plugins Count:** 1
+
+### serena-indexer
+
+**Description:** 专业的 Serena 索引管理插件 - 提供异步索引初始化、智能重建和自动化维护功能
+
+**Source:** `./plugins/serena-indexer`
+
+**Detection:** Found via repository scan (has agents folder)  
 
 ---
 

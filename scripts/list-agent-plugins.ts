@@ -55,39 +55,58 @@ async function checkForAgentsFolder(repository: string, source: string): Promise
     if (!match) return false;
     
     const [, owner, repo] = match;
+    const cleanRepo = repo.replace(/\.git$/, '');
     const cleanSource = source.replace(/^\.\//, '').replace(/\/$/, '');
     
-    // Try to check if there's an agents folder in the plugin source
-    const possiblePaths = [
-      `https://raw.githubusercontent.com/${owner}/${repo}/main/${cleanSource}/agents/README.md`,
-      `https://raw.githubusercontent.com/${owner}/${repo}/master/${cleanSource}/agents/README.md`,
-      `https://raw.githubusercontent.com/${owner}/${repo}/main/${cleanSource}/agents/.gitkeep`,
-      `https://raw.githubusercontent.com/${owner}/${repo}/master/${cleanSource}/agents/.gitkeep`,
-    ];
+    // Create a temporary directory for cloning
+    const tmpDir = `/tmp/repo-scan-${owner}-${cleanRepo}-${Date.now()}`;
     
-    for (const url of possiblePaths) {
-      try {
-        const response = await fetch(url, { method: 'HEAD' });
-        if (response.ok) {
-          return true;
-        }
-      } catch {
-        // Continue to next path
-      }
-    }
-    
-    // Also try checking via GitHub API
-    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${cleanSource}/agents`;
     try {
-      const response = await fetch(apiUrl);
-      if (response.ok) {
-        return true;
+      // Clone the repository with depth 1 (shallow clone)
+      const { execSync } = await import('child_process');
+      
+      // Try main branch first, then master
+      let cloned = false;
+      for (const branch of ['main', 'master']) {
+        try {
+          // Add GIT_TERMINAL_PROMPT=0 to prevent interactive prompts for auth
+          execSync(
+            `GIT_TERMINAL_PROMPT=0 git clone --depth 1 --branch ${branch} --single-branch ${repository} ${tmpDir} 2>&1`,
+            { stdio: 'ignore', timeout: 20000, env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } }
+          );
+          cloned = true;
+          break;
+        } catch {
+          // Try next branch
+        }
       }
-    } catch {
-      // Ignore API errors
+      
+      if (!cloned) {
+        return false;
+      }
+      
+      // Check if agents folder exists in the plugin source
+      const agentsPath = path.join(tmpDir, cleanSource, 'agents');
+      const exists = fs.existsSync(agentsPath) && fs.statSync(agentsPath).isDirectory();
+      
+      // Clean up the temporary directory
+      try {
+        execSync(`rm -rf ${tmpDir}`, { stdio: 'ignore' });
+      } catch {
+        // Ignore cleanup errors
+      }
+      
+      return exists;
+    } catch (error) {
+      // Clean up on error
+      try {
+        const { execSync } = await import('child_process');
+        execSync(`rm -rf ${tmpDir}`, { stdio: 'ignore' });
+      } catch {
+        // Ignore cleanup errors
+      }
+      return false;
     }
-    
-    return false;
   } catch (error) {
     return false;
   }
@@ -131,13 +150,18 @@ async function main() {
   const marketplacesData = JSON.parse(fs.readFileSync(marketplacesPath, 'utf-8'));
   const marketplaces: Marketplace[] = marketplacesData.marketplaces;
 
+  // Check if deep scanning is enabled (default: true)
+  const enableDeepScan = process.argv.includes('--no-deep-scan') ? false : true;
+
   console.log(`Found ${marketplaces.length} marketplaces to check\n`);
+  console.log(`Deep repository scanning: ${enableDeepScan ? 'ENABLED' : 'DISABLED'}`);
   console.log('Fetching marketplace manifests...\n');
 
   const agentPlugins: AgentPlugin[] = [];
   let processedCount = 0;
   let errorCount = 0;
   let deepScanCount = 0;
+  let deepScanAttempts = 0;
 
   // Fetch and process each marketplace
   for (const marketplace of marketplaces) {
@@ -162,14 +186,18 @@ async function main() {
         detectionMethod = 'metadata';
       }
       
-      // If not found in metadata, check for agents folder in repository
-      if (!isAgentPlugin && plugin.repository && plugin.source) {
+      // If not found in metadata, check for agents folder in repository (if enabled)
+      if (!isAgentPlugin && enableDeepScan && plugin.repository && plugin.source) {
+        deepScanAttempts++;
+        process.stdout.write(`\r  Scanning repository: ${plugin.name}...                    `);
         const hasAgentsFolder = await checkForAgentsFolder(plugin.repository, plugin.source);
         if (hasAgentsFolder) {
           isAgentPlugin = true;
           detectionMethod = 'repository-structure';
           deepScanCount++;
+          process.stdout.write(`\r  ✓ Found agents folder in ${plugin.name}!                    \n`);
         }
+        process.stdout.write(`\rProcessing: ${processedCount}/${marketplaces.length} marketplaces...`);
       }
       
       if (isAgentPlugin) {
@@ -190,7 +218,10 @@ async function main() {
   console.log(`\n\nProcessing complete!`);
   console.log(`Successfully processed: ${processedCount - errorCount}/${marketplaces.length} marketplaces`);
   console.log(`Errors: ${errorCount}`);
-  console.log(`Found via repository scan: ${deepScanCount}`);
+  if (enableDeepScan) {
+    console.log(`Repository scans attempted: ${deepScanAttempts}`);
+    console.log(`Found via repository scan: ${deepScanCount}`);
+  }
   console.log(`\nTotal agent plugins found: ${agentPlugins.length}\n`);
 
   // Output results

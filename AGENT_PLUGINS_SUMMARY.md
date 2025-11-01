@@ -10,8 +10,10 @@ Based on the `.claude-plugin/marketplaces.json` file in this project, we have id
 
 - **总市场数量 / Total Marketplaces**: 174
 - **成功处理的市场 / Successfully Processed**: 168
-- **包含 Agent 插件的市场数量 / Marketplaces with Agent Plugins**: 61
-- **Agent 插件总数 / Total Agent Plugins Found**: **242**
+- **包含 Agent 插件的市场数量 / Marketplaces with Agent Plugins**: 68
+- **Agent 插件总数 / Total Agent Plugins Found**: **386**
+  - **通过元数据检测 / Via Metadata**: 242
+  - **通过仓库扫描 / Via Repository Scan**: 144
 
 *Note: Uses word-boundary matching (`\bagents?\b`) to match both "agent" and "agents"*
 
@@ -23,30 +25,42 @@ Plugins are identified as containing agents through:
 1. **元数据检测 / Metadata Detection**: 在插件的名称、描述、标签或关键词中包含 "agent" 或 "agents"
    - Checking for "agent" or "agents" in plugin name, description, tags, or keywords
 
-2. **仓库结构扫描 / Repository Structure Scan** (有限支持 / Limited Support): 检查插件源代码目录中是否有 `agents` 文件夹
-   - Checking for `agents` folder in plugin source (may be limited by network restrictions)
+2. **仓库结构扫描 / Repository Structure Scan**: 使用 `git clone --depth 1` 克隆仓库并检查插件源代码目录中是否有 `agents` 文件夹
+   - Clones repositories with `git clone --depth 1` and checks for `agents` folder in plugin source
+   - **成功检测到 144 个额外插件！/ Successfully detected 144 additional plugins!**
 
-### 已知限制 / Known Limitations
+### 示例：检测到的插件 / Example: Detected Plugins
 
-- 某些插件可能包含 agent 功能但未在元数据中声明 "agent" 关键词
-  - Some plugins may contain agent functionality but don't declare "agent" in metadata
-- 网络限制可能阻止仓库结构扫描
-  - Network restrictions may prevent repository structure scanning
-- 示例：`eyaltoledano/claude-task-master` 插件包含 `agents` 文件夹但元数据中未提及
-  - Example: `eyaltoledano/claude-task-master` has an `agents` folder but no "agent" in metadata
+- ✅ **eyaltoledano/claude-task-master**: 通过仓库扫描检测到 `agents` 文件夹
+  - Detected via repository scan with `agents` folder
+- ✅ **其他 143 个插件 / 143 other plugins**: 仅通过仓库扫描发现
+  - Found only through repository scanning
+
+### 使用方法 / Usage
+
+```bash
+# 启用深度扫描（默认）/ Enable deep scanning (default)
+npm run list-agent-plugins
+
+# 禁用深度扫描（仅元数据）/ Disable deep scanning (metadata only)
+npx tsx scripts/list-agent-plugins.ts --no-deep-scan
+```
 
 ## 前 10 个市场（按 Agent 插件数量排序）/ Top 10 Marketplaces (by Agent Plugin Count)
 
-1. **ccplugins/awesome-claude-code-plugins** - 66 agent plugins
-2. **ananddtyagi/claude-code-marketplace** - 65 agent plugins
-3. **henkisdabro/claudecode-marketplace** - 3 agent plugins
-4. **jmanhype/claude-code-plugin-marketplace** - 3 agent plugins
-5. **jmanhype/claude-code-plugins** - 3 agent plugins
-6. **kivilaid/plugin-marketplace** - 3 agent plugins
-7. **wshobson/agents** - 2 agent plugins
-8. **animalzinc/claude-plugins** - 1 agent plugin
-9. **anthropics/claude-code** - 1 agent plugin
-10. **anthropics-claude/claude-code** - 1 agent plugin
+1. **ccplugins/awesome-claude-code-plugins** - 76 agent plugins
+2. **ananddtyagi/claude-code-marketplace** - 74 agent plugins
+3. **jmanhype/claude-code-plugin-marketplace** - 10 agent plugins
+4. **jmanhype/claude-code-plugins** - 10 agent plugins
+5. **aws-solutions-library-samples/guidance-for-claude-code-with-amazon-bedrock** - 9 agent plugins
+6. **kivilaid/plugin-marketplace** - 7 agent plugins
+7. **henkisdabro/claudecode-marketplace** - 4 agent plugins
+8. **anthropics/claude-code** - 4 agent plugins
+9. **wshobson/agents** - 3 agent plugins
+10. **otrebu/agents** - 3 agent plugins
+
+*注：这些数字包含了通过元数据和仓库扫描检测到的所有插件*
+*Note: These counts include plugins detected via both metadata and repository scanning*
 
 ## 报告文件 / Report Files
 
