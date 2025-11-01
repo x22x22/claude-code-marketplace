@@ -1,0 +1,105 @@
+name: Discover New Marketplaces
+
+on:
+  schedule:
+    # Run weekly on Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Run in dry-run mode (no changes)'
+        required: false
+        type: boolean
+        default: true
+      max_results:
+        description: 'Maximum results to process'
+        required: false
+        default: '100'
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run marketplace discovery
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "false" ]; then
+            yarn discover:save --max=${{ github.event.inputs.max_results || '100' }}
+          else
+            yarn discover --max=${{ github.event.inputs.max_results || '100' }}
+          fi
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" != "false" ]; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          if git diff --quiet .claude-plugin/marketplaces.json; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: add newly discovered marketplaces'
+          title: '🤖 Automated Discovery: New Marketplaces'
+          body: |
+            ## Automated Marketplace Discovery
+            
+            This PR adds newly discovered Claude Code plugin marketplaces from GitHub.
+            
+            ### Discovery Details
+            - **Run Date**: ${{ github.run_id }}
+            - **Trigger**: ${{ github.event_name }}
+            
+            ### What was found?
+            
+            This automated workflow searched GitHub for repositories containing `.claude-plugin/marketplace.json` files and validated them against our marketplace schema.
+            
+            ### Next Steps
+            
+            Please review the new marketplaces added to ensure they meet our quality standards:
+            - [ ] Verify marketplace manifests are valid
+            - [ ] Check plugin quality and descriptions
+            - [ ] Ensure repositories are actively maintained
+            - [ ] Verify no duplicates or spam
+            
+            ---
+            *This PR was created automatically by the marketplace discovery workflow.*
+          branch: automated-marketplace-discovery
+          delete-branch: true
+          labels: |
+            automated
+            marketplace-discovery
+
+      - name: Upload discovery preview
+        if: github.event.inputs.dry_run != 'false'
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovered-marketplaces
+          path: discovered-marketplaces.json
+          if-no-files-found: ignore

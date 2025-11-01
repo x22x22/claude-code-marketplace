@@ -18,7 +18,15 @@ Instead of hosting plugins directly, this hub connects you to multiple specializ
 
 Have a Claude Code plugin marketplace you'd like to list in the hub? We'd love to include it!
 
-### Prerequisites
+### Automated Discovery
+
+The hub **automatically discovers** new marketplaces from GitHub! If your repository contains a `.claude-plugin/marketplace.json` file, it may be discovered and added automatically. See [Automated Discovery Documentation](./docs/automated-discovery.md) for details.
+
+### Manual Submission
+
+You can also submit your marketplace manually:
+
+#### Prerequisites
 
 Your marketplace must:
 1. Be hosted on GitHub
@@ -26,7 +34,7 @@ Your marketplace must:
 3. Host open-source plugins with publicly viewable code
 4. Provide valid repository URLs for all plugins
 
-### How to Submit
+#### How to Submit
 
 1. **Fork this repository**
 2. **Edit `.claude-plugin/marketplaces.json`** and add your marketplace entry:
