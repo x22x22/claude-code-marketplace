@@ -12,7 +12,7 @@
 
 ### 1. 欢迎页面（中文默认）
 
-![欢迎页面](../tmp/playwright-logs/studio-welcome-zh-fixed.png)
+![欢迎页面](screenshots/01-welcome-zh.png)
 
 **展示内容：**
 - 标题：欢迎使用 Claude Plugin Studio
@@ -25,7 +25,7 @@
 
 ### 2. 模板选择页面
 
-![模板选择](../tmp/playwright-logs/studio-templates-zh-fixed.png)
+![模板选择](screenshots/02-templates-zh.png)
 
 **展示内容：**
 - 标题：选择模板
@@ -39,7 +39,7 @@
 
 ### 3. 配置插件页面
 
-![配置插件](../tmp/playwright-logs/studio-configure-zh-fixed.png)
+![配置插件](screenshots/03-configure-zh.png)
 
 **展示内容：**
 - 标题：配置您的插件
@@ -53,7 +53,7 @@
 
 ### 4. 设计 Agents 页面
 
-![设计 Agents](../tmp/playwright-logs/studio-agents-zh-fixed.png)
+![设计 Agents](screenshots/04-agents-zh.png)
 
 **展示内容：**
 - 标题：设计您的 Agents
@@ -72,7 +72,7 @@
 
 ### 5. 测试调试页面（初始状态）
 
-![测试页面](../tmp/playwright-logs/studio-test-zh-fixed.png)
+![测试页面](screenshots/05-test-initial-zh.png)
 
 **展示内容：**
 - 标题：测试和调试您的插件
@@ -94,7 +94,7 @@
 
 ### 6. 测试调试页面（测试完成）
 
-![测试完成](../tmp/playwright-logs/studio-test-complete-zh-fixed.png)
+![测试完成](screenshots/06-test-complete-zh.png)
 
 **展示内容：**
 - 完整的测试执行日志（中文）：
@@ -122,7 +122,7 @@
 
 ### 7. 部署页面
 
-![部署](../tmp/playwright-logs/studio-deploy-zh-fixed.png)
+![部署](screenshots/07-deploy-zh.png)
 
 **展示内容：**
 - 标题：准备部署！
@@ -179,15 +179,15 @@ fc-cache -fv
 
 ## 文件位置
 
-所有截图保存在：`/tmp/playwright-logs/`
+所有截图保存在：`docs/screenshots/`
 
-- `studio-welcome-zh-fixed.png` - 欢迎页面
-- `studio-templates-zh-fixed.png` - 模板选择
-- `studio-configure-zh-fixed.png` - 配置页面
-- `studio-agents-zh-fixed.png` - Agents 设计
-- `studio-test-zh-fixed.png` - 测试初始状态
-- `studio-test-complete-zh-fixed.png` - 测试完成
-- `studio-deploy-zh-fixed.png` - 部署页面
+- `01-welcome-zh.png` - 欢迎页面
+- `02-templates-zh.png` - 模板选择
+- `03-configure-zh.png` - 配置页面
+- `04-agents-zh.png` - Agents 设计
+- `05-test-initial-zh.png` - 测试初始状态
+- `06-test-complete-zh.png` - 测试完成
+- `07-deploy-zh.png` - 部署页面
 
 ## 更新日期
 
