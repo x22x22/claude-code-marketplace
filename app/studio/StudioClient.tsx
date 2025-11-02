@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { translations, type Locale, replacePlaceholders } from './i18n';
 
 type Step = 'welcome' | 'template' | 'configure' | 'agents' | 'test' | 'deploy';
 
@@ -27,51 +28,9 @@ interface Template {
   useCase: string;
 }
 
-const templates: Template[] = [
-  {
-    id: 'code-review',
-    name: 'Code Review Agent',
-    description: 'Automated code review with best practices checking',
-    icon: '📝',
-    agents: ['reviewer', 'style-checker', 'security-scanner'],
-    useCase: 'PR review automation'
-  },
-  {
-    id: 'testing',
-    name: 'Test Generator',
-    description: 'Generate unit and integration tests automatically',
-    icon: '🧪',
-    agents: ['test-generator', 'coverage-analyzer'],
-    useCase: 'Test automation'
-  },
-  {
-    id: 'documentation',
-    name: 'Documentation Writer',
-    description: 'Generate comprehensive documentation from code',
-    icon: '📚',
-    agents: ['doc-generator', 'example-creator'],
-    useCase: 'Documentation automation'
-  },
-  {
-    id: 'debugging',
-    name: 'Debug Assistant',
-    description: 'Interactive debugging and error analysis',
-    icon: '🐛',
-    agents: ['error-analyzer', 'fix-suggester'],
-    useCase: 'Debugging support'
-  },
-  {
-    id: 'custom',
-    name: 'Start from Scratch',
-    description: 'Build a custom plugin from the ground up',
-    icon: '⚡',
-    agents: [],
-    useCase: 'Custom workflow'
-  }
-];
-
 export default function StudioClient() {
   const [currentStep, setCurrentStep] = useState<Step>('welcome');
+  const [locale, setLocale] = useState<Locale>('zh'); // 默认中文
   const [config, setConfig] = useState<PluginConfig>({
     name: '',
     description: '',
@@ -81,13 +40,19 @@ export default function StudioClient() {
   const [testOutput, setTestOutput] = useState<string>('');
   const [isDebugging, setIsDebugging] = useState(false);
 
+  const t = translations[locale]; // 获取当前语言的翻译
+  
+  const toggleLocale = () => {
+    setLocale(locale === 'zh' ? 'en' : 'zh');
+  };
+
   const steps: { id: Step; title: string; icon: string }[] = [
-    { id: 'welcome', title: 'Welcome', icon: '👋' },
-    { id: 'template', title: 'Choose Template', icon: '📋' },
-    { id: 'configure', title: 'Configure', icon: '⚙️' },
-    { id: 'agents', title: 'Design Agents', icon: '🤖' },
-    { id: 'test', title: 'Test & Debug', icon: '🧪' },
-    { id: 'deploy', title: 'Deploy', icon: '🚀' }
+    { id: 'welcome', title: t.steps.welcome, icon: '👋' },
+    { id: 'template', title: t.steps.template, icon: '📋' },
+    { id: 'configure', title: t.steps.configure, icon: '⚙️' },
+    { id: 'agents', title: t.steps.agents, icon: '🤖' },
+    { id: 'test', title: t.steps.test, icon: '🧪' },
+    { id: 'deploy', title: t.steps.deploy, icon: '🚀' }
   ];
 
   const getCurrentStepIndex = () => steps.findIndex(s => s.id === currentStep);
@@ -107,15 +72,23 @@ export default function StudioClient() {
   };
 
   const selectTemplate = (templateId: string) => {
-    const template = templates.find(t => t.id === templateId);
-    if (template) {
+    const templateIds = ['code-review', 'testing', 'documentation', 'debugging', 'custom'];
+    const templateAgents: Record<string, string[]> = {
+      'code-review': ['reviewer', 'style-checker', 'security-scanner'],
+      'testing': ['test-generator', 'coverage-analyzer'],
+      'documentation': ['doc-generator', 'example-creator'],
+      'debugging': ['error-analyzer', 'fix-suggester'],
+      'custom': []
+    };
+    
+    if (templateIds.includes(templateId)) {
       setConfig({
         ...config,
         template: templateId,
-        agents: template.agents.map(name => ({
+        agents: templateAgents[templateId].map(name => ({
           id: Math.random().toString(36).substr(2, 9),
           name,
-          prompt: `You are a ${name} agent specialized in ${template.useCase}.`,
+          prompt: `You are a ${name} agent specialized in ${t.template.templates[templateId as keyof typeof t.template.templates].useCase}.`,
           type: name.includes('main') ? 'primary' : 'helper'
         }))
       });
@@ -125,27 +98,27 @@ export default function StudioClient() {
 
   const runTest = async () => {
     setIsDebugging(true);
-    setTestOutput('Starting test execution...\n');
+    setTestOutput(t.test.testMessages.starting + '\n');
     
     await new Promise(resolve => setTimeout(resolve, 500));
-    setTestOutput(prev => prev + '✓ Loading plugin configuration\n');
+    setTestOutput(prev => prev + t.test.testMessages.loadingConfig + '\n');
     
     await new Promise(resolve => setTimeout(resolve, 500));
-    setTestOutput(prev => prev + '✓ Validating agent prompts\n');
+    setTestOutput(prev => prev + t.test.testMessages.validating + '\n');
     
     await new Promise(resolve => setTimeout(resolve, 500));
-    setTestOutput(prev => prev + `✓ Found ${config.agents.length} agents\n`);
+    setTestOutput(prev => prev + replacePlaceholders(t.test.testMessages.foundAgents, { count: config.agents.length }) + '\n');
     
     for (const agent of config.agents) {
       await new Promise(resolve => setTimeout(resolve, 300));
-      setTestOutput(prev => prev + `  → Testing agent: ${agent.name}\n`);
+      setTestOutput(prev => prev + replacePlaceholders(t.test.testMessages.testing, { name: agent.name }) + '\n');
       await new Promise(resolve => setTimeout(resolve, 400));
-      setTestOutput(prev => prev + `    ✓ Agent "${agent.name}" initialized successfully\n`);
+      setTestOutput(prev => prev + replacePlaceholders(t.test.testMessages.initialized, { name: agent.name }) + '\n');
     }
     
     await new Promise(resolve => setTimeout(resolve, 500));
-    setTestOutput(prev => prev + '\n✅ All tests passed!\n');
-    setTestOutput(prev => prev + `\nPlugin "${config.name}" is ready for deployment.\n`);
+    setTestOutput(prev => prev + t.test.testMessages.allPassed + '\n');
+    setTestOutput(prev => prev + replacePlaceholders(t.test.testMessages.ready, { name: config.name }) + '\n');
     
     setIsDebugging(false);
   };
@@ -189,19 +162,27 @@ export default function StudioClient() {
               <div className="text-3xl">🎨</div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Claude Plugin Studio
+                  {t.title}
                 </h1>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Visual Plugin Development Tool
+                  {t.subtitle}
                 </p>
               </div>
             </div>
-            <a
-              href="/"
-              className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
-            >
-              ← Back to Marketplace
-            </a>
+            <div className="flex items-center space-x-4">
+              <button
+                onClick={toggleLocale}
+                className="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+              >
+                {locale === 'zh' ? 'English' : '中文'}
+              </button>
+              <a
+                href="/"
+                className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                {t.backToMarketplace}
+              </a>
+            </div>
           </div>
         </div>
       </header>
@@ -243,38 +224,37 @@ export default function StudioClient() {
             <div className="text-center max-w-2xl mx-auto">
               <div className="text-6xl mb-6">👋</div>
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                Welcome to Claude Plugin Studio
+                {t.welcome.title}
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-                Create professional Claude Code plugins in minutes with our visual development tool.
-                No coding required!
+                {t.welcome.subtitle}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                   <div className="text-3xl mb-2">⚡</div>
                   <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                    Fast Development
+                    {t.welcome.fastDev.title}
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Create plugins 80% faster with templates and visual tools
+                    {t.welcome.fastDev.desc}
                   </p>
                 </div>
                 <div className="p-6 bg-green-50 dark:bg-green-900/20 rounded-lg">
                   <div className="text-3xl mb-2">🧪</div>
                   <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                    Built-in Testing
+                    {t.welcome.builtInTest.title}
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Test and debug your plugins before deployment
+                    {t.welcome.builtInTest.desc}
                   </p>
                 </div>
                 <div className="p-6 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                   <div className="text-3xl mb-2">🚀</div>
                   <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                    One-Click Deploy
+                    {t.welcome.oneClick.title}
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Deploy to GitHub and marketplace with one click
+                    {t.welcome.oneClick.desc}
                   </p>
                 </div>
               </div>
@@ -282,7 +262,7 @@ export default function StudioClient() {
                 onClick={handleNext}
                 className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
               >
-                Get Started →
+                {t.welcome.getStarted}
               </button>
             </div>
           )}
@@ -291,32 +271,50 @@ export default function StudioClient() {
           {currentStep === 'template' && (
             <div>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                Choose a Template
+                {t.template.title}
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Start with a pre-built template or create from scratch
+                {t.template.subtitle}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {templates.map(template => (
-                  <div
-                    key={template.id}
-                    onClick={() => selectTemplate(template.id)}
-                    className="p-6 border-2 border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 cursor-pointer transition-all hover:shadow-lg"
-                  >
-                    <div className="text-4xl mb-3">{template.icon}</div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                      {template.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                      {template.description}
-                    </p>
-                    <div className="flex items-center text-xs text-gray-500 dark:text-gray-500">
-                      <span className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">
-                        {template.agents.length} agents
-                      </span>
+                {(['code-review', 'testing', 'documentation', 'debugging', 'custom'] as const).map(templateId => {
+                  const templateInfo = t.template.templates[templateId];
+                  const icons: Record<string, string> = {
+                    'code-review': '📝',
+                    'testing': '🧪',
+                    'documentation': '📚',
+                    'debugging': '🐛',
+                    'custom': '⚡'
+                  };
+                  const agentCounts: Record<string, number> = {
+                    'code-review': 3,
+                    'testing': 2,
+                    'documentation': 2,
+                    'debugging': 2,
+                    'custom': 0
+                  };
+                  
+                  return (
+                    <div
+                      key={templateId}
+                      onClick={() => selectTemplate(templateId)}
+                      className="p-6 border-2 border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 cursor-pointer transition-all hover:shadow-lg"
+                    >
+                      <div className="text-4xl mb-3">{icons[templateId]}</div>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                        {templateInfo.name}
+                      </h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                        {templateInfo.description}
+                      </p>
+                      <div className="flex items-center text-xs text-gray-500 dark:text-gray-500">
+                        <span className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">
+                          {agentCounts[templateId]}{t.template.agentsCount}
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           )}
@@ -325,32 +323,32 @@ export default function StudioClient() {
           {currentStep === 'configure' && (
             <div className="max-w-2xl mx-auto">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                Configure Your Plugin
+                {t.configure.title}
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Basic information about your plugin
+                {t.configure.subtitle}
               </p>
               <div className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Plugin Name *
+                    {t.configure.pluginName} {t.configure.required}
                   </label>
                   <input
                     type="text"
                     value={config.name}
                     onChange={e => setConfig({ ...config, name: e.target.value })}
-                    placeholder="e.g., my-code-reviewer"
+                    placeholder={t.configure.pluginNamePlaceholder}
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Description *
+                    {t.configure.description} {t.configure.required}
                   </label>
                   <textarea
                     value={config.description}
                     onChange={e => setConfig({ ...config, description: e.target.value })}
-                    placeholder="Describe what your plugin does..."
+                    placeholder={t.configure.descriptionPlaceholder}
                     rows={4}
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
@@ -360,10 +358,10 @@ export default function StudioClient() {
                     <div className="text-2xl">💡</div>
                     <div>
                       <h4 className="font-medium text-gray-900 dark:text-white mb-1">
-                        Template: {templates.find(t => t.id === config.template)?.name}
+                        {t.configure.template}: {config.template && t.template.templates[config.template as keyof typeof t.template.templates]?.name}
                       </h4>
                       <p className="text-sm text-gray-600 dark:text-gray-400">
-                        {config.agents.length} agents pre-configured
+                        {config.agents.length}{t.configure.agentsPreconfigured}
                       </p>
                     </div>
                   </div>
@@ -378,17 +376,17 @@ export default function StudioClient() {
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    Design Your Agents
+                    {t.agents.title}
                   </h2>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Customize agent prompts and behavior
+                    {t.agents.subtitle}
                   </p>
                 </div>
                 <button
                   onClick={addAgent}
                   className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
                 >
-                  + Add Agent
+                  {t.agents.addAgent}
                 </button>
               </div>
               <div className="space-y-4">
@@ -410,38 +408,38 @@ export default function StudioClient() {
                           onChange={e => updateAgent(agent.id, { type: e.target.value as Agent['type'] })}
                           className="ml-3 px-3 py-1 text-sm bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-gray-900 dark:text-white"
                         >
-                          <option value="primary">Primary</option>
-                          <option value="helper">Helper</option>
-                          <option value="validator">Validator</option>
+                          <option value="primary">{t.agents.types.primary}</option>
+                          <option value="helper">{t.agents.types.helper}</option>
+                          <option value="validator">{t.agents.types.validator}</option>
                         </select>
                       </div>
                       <button
                         onClick={() => deleteAgent(agent.id)}
                         className="text-red-600 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300"
                       >
-                        🗑️ Delete
+                        {t.agents.delete}
                       </button>
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                        Agent Prompt
+                        {t.agents.agentPrompt}
                       </label>
                       <textarea
                         value={agent.prompt}
                         onChange={e => updateAgent(agent.id, { prompt: e.target.value })}
                         rows={6}
                         className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white font-mono text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        placeholder="Write the agent's prompt here..."
+                        placeholder={t.agents.promptPlaceholder}
                       />
                       <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">
-                        💡 Tip: Be specific about the agent's role, responsibilities, and expected behavior
+                        {t.agents.tip}
                       </p>
                     </div>
                   </div>
                 ))}
                 {config.agents.length === 0 && (
                   <div className="text-center py-12 text-gray-500 dark:text-gray-500">
-                    No agents yet. Click "Add Agent" to create one.
+                    {t.agents.noAgents}
                   </div>
                 )}
               </div>
@@ -452,33 +450,33 @@ export default function StudioClient() {
           {currentStep === 'test' && (
             <div>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                Test & Debug Your Plugin
+                {t.test.title}
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Run tests and debug your plugin before deployment
+                {t.test.subtitle}
               </p>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {/* Test Controls */}
                 <div>
                   <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                      Plugin Summary
+                      {t.test.summary}
                     </h3>
                     <dl className="space-y-3">
                       <div>
-                        <dt className="text-sm text-gray-600 dark:text-gray-400">Name:</dt>
+                        <dt className="text-sm text-gray-600 dark:text-gray-400">{t.test.name}:</dt>
                         <dd className="text-gray-900 dark:text-white font-medium">
                           {config.name || 'Unnamed Plugin'}
                         </dd>
                       </div>
                       <div>
-                        <dt className="text-sm text-gray-600 dark:text-gray-400">Template:</dt>
+                        <dt className="text-sm text-gray-600 dark:text-gray-400">{t.test.template}:</dt>
                         <dd className="text-gray-900 dark:text-white font-medium">
-                          {templates.find(t => t.id === config.template)?.name || 'None'}
+                          {config.template ? t.template.templates[config.template as keyof typeof t.template.templates]?.name : 'None'}
                         </dd>
                       </div>
                       <div>
-                        <dt className="text-sm text-gray-600 dark:text-gray-400">Agents:</dt>
+                        <dt className="text-sm text-gray-600 dark:text-gray-400">{t.test.agentsCount}:</dt>
                         <dd className="text-gray-900 dark:text-white font-medium">
                           {config.agents.length}
                         </dd>
@@ -490,13 +488,13 @@ export default function StudioClient() {
                         disabled={isDebugging}
                         className="w-full px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium disabled:bg-gray-400 disabled:cursor-not-allowed"
                       >
-                        {isDebugging ? '🔄 Running Tests...' : '▶️ Run Tests'}
+                        {isDebugging ? t.test.runningTests : t.test.runTests}
                       </button>
                       <button
                         onClick={() => setTestOutput('')}
                         className="w-full px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors font-medium"
                       >
-                        Clear Output
+                        {t.test.clearOutput}
                       </button>
                     </div>
                   </div>
@@ -505,10 +503,10 @@ export default function StudioClient() {
                       <div className="text-xl">🐛</div>
                       <div>
                         <h4 className="font-medium text-gray-900 dark:text-white mb-1">
-                          Debug Mode
+                          {t.test.debugMode}
                         </h4>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
-                          Watch your agents execute in real-time with detailed logging
+                          {t.test.debugModeDesc}
                         </p>
                       </div>
                     </div>
@@ -519,7 +517,7 @@ export default function StudioClient() {
                 <div>
                   <div className="bg-gray-900 text-green-400 p-6 rounded-lg font-mono text-sm h-[500px] overflow-y-auto">
                     <div className="flex items-center justify-between mb-4 pb-2 border-b border-gray-700">
-                      <span className="text-gray-400">Console Output</span>
+                      <span className="text-gray-400">{t.test.consoleOutput}</span>
                       <div className="flex space-x-2">
                         <div className="w-3 h-3 rounded-full bg-red-500"></div>
                         <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -530,7 +528,7 @@ export default function StudioClient() {
                       <pre className="whitespace-pre-wrap">{testOutput}</pre>
                     ) : (
                       <div className="text-gray-600">
-                        Click "Run Tests" to see output here...
+                        {t.test.clickToSee}
                       </div>
                     )}
                   </div>
@@ -544,44 +542,44 @@ export default function StudioClient() {
             <div className="max-w-2xl mx-auto text-center">
               <div className="text-6xl mb-6">🚀</div>
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                Ready to Deploy!
+                {t.deploy.title}
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-                Your plugin is configured and tested. Deploy it to GitHub and the marketplace.
+                {t.deploy.subtitle}
               </p>
               <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-lg border border-gray-200 dark:border-gray-700 mb-8 text-left">
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
-                  Deployment Checklist
+                  {t.deploy.checklist}
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-center text-gray-700 dark:text-gray-300">
                     <span className="text-green-600 dark:text-green-400 mr-2">✓</span>
-                    Plugin configured
+                    {t.deploy.checklistItems.configured}
                   </li>
                   <li className="flex items-center text-gray-700 dark:text-gray-300">
                     <span className="text-green-600 dark:text-green-400 mr-2">✓</span>
-                    {config.agents.length} agents defined
+                    {replacePlaceholders(t.deploy.checklistItems.agentsDefined, { count: config.agents.length })}
                   </li>
                   <li className="flex items-center text-gray-700 dark:text-gray-300">
                     <span className="text-green-600 dark:text-green-400 mr-2">✓</span>
-                    Tests passed
+                    {t.deploy.checklistItems.testsPassed}
                   </li>
                   <li className="flex items-center text-gray-700 dark:text-gray-300">
                     <span className="text-gray-400 mr-2">○</span>
-                    Ready for deployment
+                    {t.deploy.checklistItems.ready}
                   </li>
                 </ul>
               </div>
               <div className="space-y-4">
                 <button className="w-full px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-lg">
-                  Deploy to GitHub
+                  {t.deploy.deployToGitHub}
                 </button>
                 <button className="w-full px-8 py-4 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors font-medium">
-                  Download Plugin Files
+                  {t.deploy.downloadFiles}
                 </button>
               </div>
               <p className="text-sm text-gray-500 dark:text-gray-500 mt-6">
-                🔒 Secure GitHub integration • 📦 Automatic versioning • 📝 Auto-generated docs
+                {t.deploy.features}
               </p>
             </div>
           )}
@@ -593,7 +591,7 @@ export default function StudioClient() {
                 onClick={handleBack}
                 className="px-6 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors font-medium"
               >
-                ← Back
+                {t.buttons.back}
               </button>
               {currentStep !== 'deploy' && (
                 <button
@@ -603,7 +601,7 @@ export default function StudioClient() {
                   }
                   className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium disabled:bg-gray-400 disabled:cursor-not-allowed"
                 >
-                  Next →
+                  {t.buttons.next}
                 </button>
               )}
             </div>
@@ -613,7 +611,7 @@ export default function StudioClient() {
 
       {/* Footer */}
       <footer className="mt-12 pb-8 text-center text-sm text-gray-600 dark:text-gray-400">
-        <p>Claude Plugin Studio - Making plugin development accessible to everyone</p>
+        <p>{t.footer}</p>
       </footer>
     </div>
   );
