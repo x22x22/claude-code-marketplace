@@ -42,6 +42,7 @@ interface AgentPlugin {
   description?: string;
   tags?: string[];
   source?: string;
+  repository?: string;
   manifestUrl: string;
   detectionMethod?: string; // How the agent was detected
 }
@@ -208,6 +209,7 @@ async function main() {
           description: plugin.description,
           tags: plugin.tags,
           source: plugin.source,
+          repository: plugin.repository,
           manifestUrl: marketplace.manifestUrl,
           detectionMethod
         });
@@ -340,6 +342,10 @@ function generateMarkdownReport(
       }
       if (plugin.source) {
         lines.push(`**Source:** \`${plugin.source}\``);
+        lines.push('');
+      }
+      if (plugin.repository) {
+        lines.push(`**Repository:** ${plugin.repository}`);
         lines.push('');
       }
       if (plugin.detectionMethod === 'repository-structure') {

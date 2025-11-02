@@ -1,8 +1,8 @@
 # Agent Plugins Report
 
-Generated: 2025-11-01T16:06:27.590Z
+Generated: 2025-11-02T02:49:20.422Z
 
-Total agent plugins found: **386**
+Total agent plugins found: **385**
 
 ---
 
@@ -33,7 +33,6 @@ Total agent plugins found: **386**
 - [aidenestelle/Aidens-claude-code-marketplace](#aidenestelle-aidens-claude-code-marketplace) (1 plugins)
 - [avaloki108/claude-flow----web3](#avaloki108-claude-flow-web3) (1 plugins)
 - [avxkim/personal-marketplace](#avxkim-personal-marketplace) (1 plugins)
-- [bgauryy/octocode-mcp](#bgauryy-octocode-mcp) (1 plugins)
 - [blogic-cz/blogic-marketplace](#blogic-cz-blogic-marketplace) (1 plugins)
 - [classmethod/tsumiki](#classmethod-tsumiki) (1 plugins)
 - [feiskyer/claude-code-settings](#feiskyer-claude-code-settings) (1 plugins)
@@ -93,6 +92,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/example-full-featured`
 
+**Repository:** https://github.com/kivilaid/plugin-marketplace
+
 ---
 
 ### agent-sdk-dev
@@ -125,6 +126,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/code-documentation`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -134,6 +137,8 @@ Total agent plugins found: **386**
 **Description:** Interactive debugging, developer experience optimization, and smart debugging workflows
 
 **Source:** `./plugins/debugging-toolkit`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -145,6 +150,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/git-pr-workflows`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -154,6 +161,8 @@ Total agent plugins found: **386**
 **Description:** Backend API design, GraphQL architecture, and test-driven backend development
 
 **Source:** `./plugins/backend-development`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -165,6 +174,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/frontend-mobile-development`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -174,6 +185,8 @@ Total agent plugins found: **386**
 **Description:** End-to-end feature orchestration with testing, security, performance, and deployment
 
 **Source:** `./plugins/full-stack-orchestration`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -185,6 +198,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/unit-testing`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -194,6 +209,8 @@ Total agent plugins found: **386**
 **Description:** Test-driven development methodology with red-green-refactor cycles and code review
 
 **Source:** `./plugins/tdd-workflows`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -205,6 +222,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/code-review-ai`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -214,6 +233,8 @@ Total agent plugins found: **386**
 **Description:** Code cleanup, refactoring automation, and technical debt management with context restoration
 
 **Source:** `./plugins/code-refactoring`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -225,6 +246,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/dependency-management`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -235,6 +258,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/error-debugging`
 
+**Repository:** https://github.com/wshobson/agents
+
 ---
 
 ### team-collaboration
@@ -242,6 +267,8 @@ Total agent plugins found: **386**
 **Description:** Team workflows, issue management, standup automation, and developer experience optimization
 
 **Source:** `./plugins/team-collaboration`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -253,6 +280,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/llm-application-dev`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -263,6 +292,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/agent-orchestration`
 
+**Repository:** https://github.com/wshobson/agents
+
 ---
 
 ### context-management
@@ -270,6 +301,8 @@ Total agent plugins found: **386**
 **Description:** Context persistence, restoration, and long-running conversation management
 
 **Source:** `./plugins/context-management`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -281,6 +314,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/machine-learning-ops`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -290,6 +325,8 @@ Total agent plugins found: **386**
 **Description:** ETL pipeline construction, data warehouse design, batch processing workflows, and data-driven feature development
 
 **Source:** `./plugins/data-engineering`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -301,6 +338,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/incident-response`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -310,6 +349,8 @@ Total agent plugins found: **386**
 **Description:** Error tracing, root cause analysis, and smart debugging for production systems
 
 **Source:** `./plugins/error-diagnostics`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -321,6 +362,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/distributed-debugging`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -330,6 +373,8 @@ Total agent plugins found: **386**
 **Description:** Metrics collection, logging infrastructure, distributed tracing, SLO implementation, and monitoring dashboards
 
 **Source:** `./plugins/observability-monitoring`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -341,6 +386,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/deployment-strategies`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -350,6 +397,8 @@ Total agent plugins found: **386**
 **Description:** Pre-deployment checks, configuration validation, and deployment readiness assessment
 
 **Source:** `./plugins/deployment-validation`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -361,6 +410,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/kubernetes-operations`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -370,6 +421,8 @@ Total agent plugins found: **386**
 **Description:** Cloud architecture design for AWS/Azure/GCP, Kubernetes cluster configuration, Terraform infrastructure-as-code, hybrid cloud networking, and multi-cloud cost optimization
 
 **Source:** `./plugins/cloud-infrastructure`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -381,6 +434,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/cicd-automation`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -390,6 +445,8 @@ Total agent plugins found: **386**
 **Description:** Application profiling, performance optimization, and observability for frontend and backend systems
 
 **Source:** `./plugins/application-performance`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -401,6 +458,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/database-cloud-optimization`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -410,6 +469,8 @@ Total agent plugins found: **386**
 **Description:** Multi-perspective code analysis covering architecture, security, and best practices
 
 **Source:** `./plugins/comprehensive-review`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -421,6 +482,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/performance-testing-review`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -430,6 +493,8 @@ Total agent plugins found: **386**
 **Description:** Framework updates, migration planning, and architectural transformation workflows
 
 **Source:** `./plugins/framework-migration`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -441,6 +506,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/codebase-cleanup`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -450,6 +517,8 @@ Total agent plugins found: **386**
 **Description:** Database architecture, schema design, and SQL optimization for production systems
 
 **Source:** `./plugins/database-design`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -461,6 +530,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/database-migrations`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -470,6 +541,8 @@ Total agent plugins found: **386**
 **Description:** SAST analysis, dependency vulnerability scanning, OWASP Top 10 compliance, container security scanning, and automated security hardening
 
 **Source:** `./plugins/security-scanning`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -481,6 +554,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/security-compliance`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -490,6 +565,8 @@ Total agent plugins found: **386**
 **Description:** API security hardening, authentication implementation, authorization patterns, rate limiting, and input validation
 
 **Source:** `./plugins/backend-api-security`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -501,6 +578,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/frontend-mobile-security`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -510,6 +589,8 @@ Total agent plugins found: **386**
 **Description:** Schema validation, data quality monitoring, streaming validation pipelines, and input validation for backend APIs
 
 **Source:** `./plugins/data-validation-suite`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -521,6 +602,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/api-scaffolding`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -530,6 +613,8 @@ Total agent plugins found: **386**
 **Description:** API testing automation, request mocking, OpenAPI documentation generation, observability setup, and monitoring
 
 **Source:** `./plugins/api-testing-observability`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -541,6 +626,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/seo-content-creation`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -550,6 +637,8 @@ Total agent plugins found: **386**
 **Description:** Technical SEO optimization including meta tags, keywords, structure, and featured snippets
 
 **Source:** `./plugins/seo-technical-optimization`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -561,6 +650,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/seo-analysis-monitoring`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -570,6 +661,8 @@ Total agent plugins found: **386**
 **Description:** OpenAPI specification generation, Mermaid diagram creation, tutorial writing, API reference documentation
 
 **Source:** `./plugins/documentation-generation`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -581,6 +674,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/multi-platform-apps`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -590,6 +685,8 @@ Total agent plugins found: **386**
 **Description:** Business metrics analysis, KPI tracking, financial reporting, and data-driven decision making
 
 **Source:** `./plugins/business-analytics`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -601,6 +698,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/hr-legal-compliance`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -610,6 +709,8 @@ Total agent plugins found: **386**
 **Description:** Customer support workflow automation, sales pipeline management, email campaigns, and CRM integration
 
 **Source:** `./plugins/customer-sales-automation`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -621,6 +722,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/content-marketing`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -630,6 +733,8 @@ Total agent plugins found: **386**
 **Description:** Smart contract development with Solidity, DeFi protocol implementation, NFT platforms, and Web3 application architecture
 
 **Source:** `./plugins/blockchain-web3`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -641,6 +746,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/quantitative-trading`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -650,6 +757,8 @@ Total agent plugins found: **386**
 **Description:** Payment gateway integration with Stripe, PayPal, checkout flow implementation, subscription billing, and PCI compliance
 
 **Source:** `./plugins/payment-processing`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -661,6 +770,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/game-development`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -670,6 +781,8 @@ Total agent plugins found: **386**
 **Description:** WCAG accessibility auditing, compliance validation, UI testing for screen readers, keyboard navigation, and inclusive design
 
 **Source:** `./plugins/accessibility-compliance`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -681,6 +794,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/python-development`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -690,6 +805,8 @@ Total agent plugins found: **386**
 **Description:** JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks
 
 **Source:** `./plugins/javascript-typescript`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -701,6 +818,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/systems-programming`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -710,6 +829,8 @@ Total agent plugins found: **386**
 **Description:** JVM language development including Java, Scala, and C# with enterprise patterns and frameworks
 
 **Source:** `./plugins/jvm-languages`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -721,6 +842,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/web-scripting`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -730,6 +853,8 @@ Total agent plugins found: **386**
 **Description:** Functional programming with Elixir, OTP patterns, Phoenix framework, and distributed systems
 
 **Source:** `./plugins/functional-programming`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -741,6 +866,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/arm-cortex-microcontrollers`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -750,6 +877,8 @@ Total agent plugins found: **386**
 **Description:** Production-grade Bash scripting with defensive programming, POSIX compliance, and comprehensive testing
 
 **Source:** `./plugins/shell-scripting`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -1856,6 +1985,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/code-documentation`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -1865,6 +1996,8 @@ Total agent plugins found: **386**
 **Description:** Interactive debugging, developer experience optimization, and smart debugging workflows
 
 **Source:** `./plugins/debugging-toolkit`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -1876,6 +2009,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/git-pr-workflows`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -1885,6 +2020,8 @@ Total agent plugins found: **386**
 **Description:** Backend API design, GraphQL architecture, and test-driven backend development
 
 **Source:** `./plugins/backend-development`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -1896,6 +2033,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/frontend-mobile-development`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -1905,6 +2044,8 @@ Total agent plugins found: **386**
 **Description:** End-to-end feature orchestration with testing, security, performance, and deployment
 
 **Source:** `./plugins/full-stack-orchestration`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -1916,6 +2057,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/unit-testing`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -1925,6 +2068,8 @@ Total agent plugins found: **386**
 **Description:** Test-driven development methodology with red-green-refactor cycles and code review
 
 **Source:** `./plugins/tdd-workflows`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -1936,6 +2081,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/code-review-ai`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -1945,6 +2092,8 @@ Total agent plugins found: **386**
 **Description:** Code cleanup, refactoring automation, and technical debt management with context restoration
 
 **Source:** `./plugins/code-refactoring`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -1956,6 +2105,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/dependency-management`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -1966,6 +2117,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/error-debugging`
 
+**Repository:** https://github.com/wshobson/agents
+
 ---
 
 ### team-collaboration
@@ -1973,6 +2126,8 @@ Total agent plugins found: **386**
 **Description:** Team workflows, issue management, standup automation, and developer experience optimization
 
 **Source:** `./plugins/team-collaboration`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -1984,6 +2139,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/llm-application-dev`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -1994,6 +2151,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/agent-orchestration`
 
+**Repository:** https://github.com/wshobson/agents
+
 ---
 
 ### context-management
@@ -2001,6 +2160,8 @@ Total agent plugins found: **386**
 **Description:** Context persistence, restoration, and long-running conversation management
 
 **Source:** `./plugins/context-management`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2012,6 +2173,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/machine-learning-ops`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2021,6 +2184,8 @@ Total agent plugins found: **386**
 **Description:** ETL pipeline construction, data warehouse design, batch processing workflows, and data-driven feature development
 
 **Source:** `./plugins/data-engineering`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2032,6 +2197,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/incident-response`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2041,6 +2208,8 @@ Total agent plugins found: **386**
 **Description:** Error tracing, root cause analysis, and smart debugging for production systems
 
 **Source:** `./plugins/error-diagnostics`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2052,6 +2221,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/distributed-debugging`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2061,6 +2232,8 @@ Total agent plugins found: **386**
 **Description:** Metrics collection, logging infrastructure, distributed tracing, SLO implementation, and monitoring dashboards
 
 **Source:** `./plugins/observability-monitoring`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2072,6 +2245,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/deployment-strategies`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2081,6 +2256,8 @@ Total agent plugins found: **386**
 **Description:** Pre-deployment checks, configuration validation, and deployment readiness assessment
 
 **Source:** `./plugins/deployment-validation`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2092,6 +2269,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/kubernetes-operations`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2101,6 +2280,8 @@ Total agent plugins found: **386**
 **Description:** Cloud architecture design for AWS/Azure/GCP, Kubernetes cluster configuration, Terraform infrastructure-as-code, hybrid cloud networking, and multi-cloud cost optimization
 
 **Source:** `./plugins/cloud-infrastructure`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2112,6 +2293,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/cicd-automation`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2121,6 +2304,8 @@ Total agent plugins found: **386**
 **Description:** Application profiling, performance optimization, and observability for frontend and backend systems
 
 **Source:** `./plugins/application-performance`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2132,6 +2317,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/database-cloud-optimization`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2141,6 +2328,8 @@ Total agent plugins found: **386**
 **Description:** Multi-perspective code analysis covering architecture, security, and best practices
 
 **Source:** `./plugins/comprehensive-review`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2152,6 +2341,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/performance-testing-review`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2161,6 +2352,8 @@ Total agent plugins found: **386**
 **Description:** Framework updates, migration planning, and architectural transformation workflows
 
 **Source:** `./plugins/framework-migration`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2172,6 +2365,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/codebase-cleanup`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2181,6 +2376,8 @@ Total agent plugins found: **386**
 **Description:** Database architecture, schema design, and SQL optimization for production systems
 
 **Source:** `./plugins/database-design`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2192,6 +2389,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/database-migrations`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2201,6 +2400,8 @@ Total agent plugins found: **386**
 **Description:** SAST analysis, dependency vulnerability scanning, OWASP Top 10 compliance, container security scanning, and automated security hardening
 
 **Source:** `./plugins/security-scanning`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2212,6 +2413,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/security-compliance`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2221,6 +2424,8 @@ Total agent plugins found: **386**
 **Description:** API security hardening, authentication implementation, authorization patterns, rate limiting, and input validation
 
 **Source:** `./plugins/backend-api-security`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2232,6 +2437,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/frontend-mobile-security`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2241,6 +2448,8 @@ Total agent plugins found: **386**
 **Description:** Schema validation, data quality monitoring, streaming validation pipelines, and input validation for backend APIs
 
 **Source:** `./plugins/data-validation-suite`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2252,6 +2461,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/api-scaffolding`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2261,6 +2472,8 @@ Total agent plugins found: **386**
 **Description:** API testing automation, request mocking, OpenAPI documentation generation, observability setup, and monitoring
 
 **Source:** `./plugins/api-testing-observability`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2272,6 +2485,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/seo-content-creation`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2281,6 +2496,8 @@ Total agent plugins found: **386**
 **Description:** Technical SEO optimization including meta tags, keywords, structure, and featured snippets
 
 **Source:** `./plugins/seo-technical-optimization`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2292,6 +2509,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/seo-analysis-monitoring`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2301,6 +2520,8 @@ Total agent plugins found: **386**
 **Description:** OpenAPI specification generation, Mermaid diagram creation, tutorial writing, API reference documentation
 
 **Source:** `./plugins/documentation-generation`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2312,6 +2533,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/multi-platform-apps`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2321,6 +2544,8 @@ Total agent plugins found: **386**
 **Description:** Business metrics analysis, KPI tracking, financial reporting, and data-driven decision making
 
 **Source:** `./plugins/business-analytics`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2332,6 +2557,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/hr-legal-compliance`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2341,6 +2568,8 @@ Total agent plugins found: **386**
 **Description:** Customer support workflow automation, sales pipeline management, email campaigns, and CRM integration
 
 **Source:** `./plugins/customer-sales-automation`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2352,6 +2581,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/content-marketing`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2361,6 +2592,8 @@ Total agent plugins found: **386**
 **Description:** Smart contract development with Solidity, DeFi protocol implementation, NFT platforms, and Web3 application architecture
 
 **Source:** `./plugins/blockchain-web3`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2372,6 +2605,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/quantitative-trading`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2381,6 +2616,8 @@ Total agent plugins found: **386**
 **Description:** Payment gateway integration with Stripe, PayPal, checkout flow implementation, subscription billing, and PCI compliance
 
 **Source:** `./plugins/payment-processing`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2392,6 +2629,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/game-development`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2401,6 +2640,8 @@ Total agent plugins found: **386**
 **Description:** WCAG accessibility auditing, compliance validation, UI testing for screen readers, keyboard navigation, and inclusive design
 
 **Source:** `./plugins/accessibility-compliance`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2412,6 +2653,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/python-development`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2421,6 +2664,8 @@ Total agent plugins found: **386**
 **Description:** JavaScript and TypeScript development with ES6+, Node.js, React, and modern web frameworks
 
 **Source:** `./plugins/javascript-typescript`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2432,6 +2677,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/systems-programming`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2441,6 +2688,8 @@ Total agent plugins found: **386**
 **Description:** JVM language development including Java, Scala, and C# with enterprise patterns and frameworks
 
 **Source:** `./plugins/jvm-languages`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2452,6 +2701,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/web-scripting`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2461,6 +2712,8 @@ Total agent plugins found: **386**
 **Description:** Functional programming with Elixir, OTP patterns, Phoenix framework, and distributed systems
 
 **Source:** `./plugins/functional-programming`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2472,6 +2725,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/julia-development`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2482,6 +2737,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/arm-cortex-microcontrollers`
 
+**Repository:** https://github.com/wshobson/agents
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2491,6 +2748,8 @@ Total agent plugins found: **386**
 **Description:** Production-grade Bash scripting with defensive programming, POSIX compliance, and comprehensive testing
 
 **Source:** `./plugins/shell-scripting`
+
+**Repository:** https://github.com/wshobson/agents
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2730,6 +2989,8 @@ Total agent plugins found: **386**
 
 **Source:** `./`
 
+**Repository:** https://github.com/amitpatole/claude-genkit-plugin
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2739,6 +3000,8 @@ Total agent plugins found: **386**
 **Description:** Automatically generate comprehensive tests for Genkit flows with support for unit tests, integration tests, and end-to-end testing
 
 **Source:** `./plugins/genkit-test-writer`
+
+**Repository:** https://github.com/amitpatole/claude-genkit-plugin
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2750,6 +3013,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/genkit-starter-kits`
 
+**Repository:** https://github.com/amitpatole/claude-genkit-plugin
+
 ---
 
 ### genkit-image
@@ -2757,6 +3022,8 @@ Total agent plugins found: **386**
 **Description:** Comprehensive image processing for Genkit - generation, editing, analysis, optimization with Claude Vision, DALL-E, Stable Diffusion, and Sharp
 
 **Source:** `./plugins/genkit-image`
+
+**Repository:** https://github.com/amitpatole/claude-genkit-plugin
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2768,6 +3035,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/genkit-audio`
 
+**Repository:** https://github.com/amitpatole/claude-genkit-plugin
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2778,6 +3047,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/genkit-video`
 
+**Repository:** https://github.com/amitpatole/claude-genkit-plugin
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2787,6 +3058,8 @@ Total agent plugins found: **386**
 **Description:** Complete multi-modal content creation studio for Genkit - Generate blogs, social media, marketing content, videos, and more using Gemini, Claude, GPT, and specialized AI tools
 
 **Source:** `./plugins/genkit-content-studio`
+
+**Repository:** https://github.com/amitpatole/claude-genkit-plugin
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2803,6 +3076,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/blog-style-guide-creator`
 
+**Repository:** https://github.com/animalzinc/claude-plugins
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2812,6 +3087,8 @@ Total agent plugins found: **386**
 **Description:** Transform data and findings into self-contained interactive HTML presentations
 
 **Source:** `./plugins/interactive-presentation-generator`
+
+**Repository:** https://github.com/animalzinc/claude-plugins
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2823,6 +3100,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/interview-transcript-analyzer`
 
+**Repository:** https://github.com/animalzinc/claude-plugins
+
 ---
 
 ### content-library-auditor
@@ -2830,6 +3109,8 @@ Total agent plugins found: **386**
 **Description:** Analyze WordPress XML, CMS JSON, or CSV exports for content insights
 
 **Source:** `./plugins/content-library-auditor`
+
+**Repository:** https://github.com/animalzinc/claude-plugins
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2883,6 +3164,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/plugin-quickstart-generator`
 
+**Repository:** https://github.com/dhofheinz/open-plugins
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2892,6 +3175,8 @@ Total agent plugins found: **386**
 **Description:** Comprehensive validation for Claude Code marketplaces and plugins with quality scoring, security scanning, and automated checks
 
 **Source:** `./plugins/marketplace-validator-plugin`
+
+**Repository:** https://github.com/dhofheinz/open-plugins
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2903,6 +3188,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/git-commit-assistant`
 
+**Repository:** https://github.com/dhofheinz/open-plugins
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2912,6 +3199,8 @@ Total agent plugins found: **386**
 **Description:** Elite full-stack engineering capabilities with expert-level development across frontend, backend, databases, and infrastructure. Includes architecture design, feature implementation, performance optimization, refactoring, debugging, and comprehensive code review.
 
 **Source:** `./plugins/10x-fullstack-engineer`
+
+**Repository:** https://github.com/dhofheinz/open-plugins
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2928,6 +3217,8 @@ Total agent plugins found: **386**
 
 **Source:** `./requirements-driven-workflow/`
 
+**Repository:** https://github.com/cexll/myclaude
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -2938,6 +3229,8 @@ Total agent plugins found: **386**
 
 **Source:** `./bmad-agile-workflow/`
 
+**Repository:** https://github.com/cexll/myclaude
+
 ---
 
 ### development-essentials
@@ -2945,6 +3238,8 @@ Total agent plugins found: **386**
 **Description:** Essential development commands for coding, debugging, testing, optimization, and documentation
 
 **Source:** `./development-essentials/`
+
+**Repository:** https://github.com/cexll/myclaude
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -2955,6 +3250,8 @@ Total agent plugins found: **386**
 **Description:** Advanced AI agent for complex problem solving and deep analysis with GPT-5 integration
 
 **Source:** `./advanced-ai-agents/`
+
+**Repository:** https://github.com/cexll/myclaude
 
 ---
 
@@ -3091,6 +3388,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugins/dexpaprika-claude-plugin`
 
+**Repository:** https://github.com/CoinPaprika/claude-marketplace
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -3100,6 +3399,8 @@ Total agent plugins found: **386**
 **Description:** Access comprehensive cryptocurrency market data from CoinPaprika including real-time prices, market metrics, historical data, and on-chain analytics for 8000+ cryptocurrencies
 
 **Source:** `./plugins/coinpaprika-claude-plugin`
+
+**Repository:** https://github.com/CoinPaprika/claude-marketplace
 
 **Detection:** Found via repository scan (has agents folder)  
 
@@ -3194,6 +3495,8 @@ Total agent plugins found: **386**
 
 **Source:** `[object Object]`
 
+**Repository:** https://github.com/AgiFlow/aicode-toolkit
+
 ---
 
 ## aidenestelle/Aidens-claude-code-marketplace
@@ -3222,6 +3525,8 @@ Total agent plugins found: **386**
 
 **Source:** `./`
 
+**Repository:** https://github.com/ruvnet/claude-flow
+
 ---
 
 ## avxkim/personal-marketplace
@@ -3234,19 +3539,6 @@ Total agent plugins found: **386**
 **Description:** My own set of agents, commands, hooks
 
 **Source:** `./plugin`
-
----
-
-## bgauryy/octocode-mcp
-
-**Marketplace ID:** `bgauryy-octocode-mcp`  
-**Agent Plugins Count:** 1
-
-### octocode-claude-plugin
-
-**Description:** Complete AI development team with 8 specialized agents for requirements gathering, architecture design, UX design, implementation, and QA
-
-**Source:** `./octocode-claude-plugin`
 
 ---
 
@@ -3273,6 +3565,8 @@ Total agent plugins found: **386**
 **Description:** AI-driven development toolkit for TDD and SDD workflows, providing comprehensive command templates and agents to enhance developer productivity with Claude Code
 
 **Source:** `./`
+
+**Repository:** https://github.com/classmethod/tsumiki
 
 ---
 
@@ -3314,6 +3608,8 @@ Total agent plugins found: **386**
 **Tags:** `mcp`, `api`, `openapi`, `swagger`, `codegen`, `docker`, `kubernetes`, `security`, `golang`, `python`, `typescript`, `ci-cd`, `github-actions`, `agentic`, `context-management`
 
 **Source:** `./`
+
+**Repository:** https://github.com/CodeGlide/codeglide-agents
 
 ---
 
@@ -3358,6 +3654,8 @@ Total agent plugins found: **386**
 
 **Source:** `./`
 
+**Repository:** https://github.com/DustyWalker/claude-code-marketplace
+
 ---
 
 ## EveryInc/every-marketplace
@@ -3386,6 +3684,8 @@ Total agent plugins found: **386**
 
 **Source:** `./packages/claude-code-plugin`
 
+**Repository:** https://github.com/eyaltoledano/claude-task-master
+
 **Detection:** Found via repository scan (has agents folder)  
 
 ---
@@ -3413,6 +3713,8 @@ Total agent plugins found: **386**
 **Description:** Mycelium distributed intelligence system with 130+ expert agents, dual-mode coordination (Redis/TaskQueue/Markdown), real-time pub/sub messaging, and durable workflows
 
 **Source:** `./plugins/mycelium-core`
+
+**Repository:** https://github.com/gsornsen/mycelium
 
 ---
 
@@ -3481,6 +3783,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugin`
 
+**Repository:** https://github.com/jmgilman/sow
+
 ---
 
 ## kodflow/.repository
@@ -3508,6 +3812,8 @@ Total agent plugins found: **386**
 **Description:** Core SimpleClaude framework with 4+1 intent-based commands and 6 specialized agents for token-efficient execution
 
 **Source:** `./plugins/simpleclaude`
+
+**Repository:** https://github.com/kylesnowschwartz/SimpleClaude
 
 ---
 
@@ -3537,6 +3843,8 @@ Total agent plugins found: **386**
 
 **Source:** `./plugin`
 
+**Repository:** https://github.com/leobrival/blog-kit
+
 ---
 
 ## lpasqualis/lpclaude
@@ -3565,6 +3873,8 @@ Total agent plugins found: **386**
 
 **Source:** `./claude-code-config`
 
+**Repository:** https://github.com/melvynx/aiblueprint
+
 ---
 
 ## n4s5ti/claude-flow
@@ -3579,6 +3889,8 @@ Total agent plugins found: **386**
 **Tags:** `productivity`, `automation`, `ai`, `agents`, `swarm`, `coordination`, `sparc`, `github`, `neural-network`, `enterprise`
 
 **Source:** `./`
+
+**Repository:** https://github.com/ruvnet/claude-flow
 
 ---
 
@@ -3674,6 +3986,8 @@ Total agent plugins found: **386**
 **Tags:** `productivity`, `automation`, `ai`, `agents`, `swarm`, `coordination`, `sparc`, `github`, `neural-network`, `enterprise`
 
 **Source:** `./`
+
+**Repository:** https://github.com/ruvnet/claude-flow
 
 ---
 
@@ -3817,6 +4131,8 @@ Total agent plugins found: **386**
 **Description:** 专业的 Serena 索引管理插件 - 提供异步索引初始化、智能重建和自动化维护功能
 
 **Source:** `./plugins/serena-indexer`
+
+**Repository:** https://github.com/ZephyrDeng/cc-plugins.git
 
 **Detection:** Found via repository scan (has agents folder)  
 
