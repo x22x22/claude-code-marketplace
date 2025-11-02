@@ -4,6 +4,12 @@ The decentralized hub for discovering Claude Code plugin marketplaces. Browse mu
 
 Visit the hub at [claudecodemarketplace.com](https://claudecodemarketplace.com)
 
+## 📚 Documentation
+
+- **[Architecture Analysis](docs/MARKETPLACE_ARCHITECTURE_ANALYSIS.md)** - Comprehensive analysis of the marketplace principles and design (中英双语 / Bilingual)
+- **[Technical Deep Dive](docs/TECHNICAL_DEEP_DIVE.md)** - Detailed technical implementation patterns and code examples
+- **[Practical Guide](docs/PRACTICAL_GUIDE.md)** - Step-by-step guide for creating and submitting marketplaces
+
 ## What is the Marketplace Hub?
 
 Instead of hosting plugins directly, this hub connects you to multiple specialized plugin marketplaces maintained by different communities. Each marketplace can focus on specific topics, frameworks, or use cases.
