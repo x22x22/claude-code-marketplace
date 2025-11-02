@@ -30,7 +30,10 @@ We've analyzed **161 Claude Code plugins** from 15 repositories to understand co
 - 10 major pain points identified in plugin development
 - Visual development tool could reduce development time by 80%
 
-**🚀 Run the Analysis:**
+**🚀 Try the Prototype:**
+- [Claude Plugin Studio](/studio) - Interactive prototype with development workflow and debugging
+
+**🔧 Run the Analysis:**
 ```bash
 npm run analyze-plugins
 ```
