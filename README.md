@@ -14,6 +14,27 @@ Instead of hosting plugins directly, this hub connects you to multiple specializ
 - ⚡ **Fast Updates** - Each marketplace controls its own plugin listings
 - 🌐 **Community Driven** - Anyone can create and maintain a marketplace
 
+## 📊 Plugin Analysis & Design
+
+We've analyzed **161 Claude Code plugins** from 15 repositories to understand common patterns, pain points, and opportunities. Based on this analysis, we've designed **Claude Plugin Studio** - a visual web development tool for creating plugins.
+
+**📚 Read the Analysis:**
+- [English Analysis & Design](./PLUGIN_ANALYSIS_AND_DESIGN.md) - Comprehensive analysis and tool design
+- [Implementation Guide](./PLUGIN_STUDIO_IMPLEMENTATION_GUIDE.md) - Detailed technical specifications
+- [中文摘要](./CLAUDE_PLUGIN_STUDIO_CN.md) - Chinese summary
+- [Analysis README](./docs/PLUGIN_ANALYSIS_README.md) - Overview and quick start
+
+**🔑 Key Findings:**
+- 80% of plugins use `agents` folder structure
+- Code review is the #1 use case (45% of plugins)
+- 10 major pain points identified in plugin development
+- Visual development tool could reduce development time by 80%
+
+**🚀 Run the Analysis:**
+```bash
+npm run analyze-plugins
+```
+
 ## Submit Your Marketplace
 
 Have a Claude Code plugin marketplace you'd like to list in the hub? We'd love to include it!
