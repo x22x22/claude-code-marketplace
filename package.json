@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "list-agent-plugins": "tsx scripts/list-agent-plugins.ts"
+    "list-agent-plugins": "tsx scripts/list-agent-plugins.ts",
+    "analyze-plugins": "tsx scripts/analyze-plugins.ts"
   },
   "dependencies": {
     "@vercel/speed-insights": "^1.2.0",
@@ -22,8 +23,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "playwright": "^1.56.1",
     "tailwindcss": "^4",
     "tsx": "^4.19.2",
-    "typescript": "^5"
+    "typescript": "5.9.3"
   }
 }
