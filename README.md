@@ -32,11 +32,18 @@ We've analyzed **161 Claude Code plugins** from 15 repositories to understand co
 
 **🚀 Try the Prototype:**
 - [Claude Plugin Studio](/studio) - Interactive prototype with development workflow and debugging
+- [View Screenshots](./docs/STUDIO_SCREENSHOTS_ZH.md) - All 7 screenshots with Chinese UI
 
 **🔧 Run the Analysis:**
 ```bash
 npm run analyze-plugins
 ```
+
+**👨‍💻 For Developers & AI Agents:**
+- [Development Manual](./docs/DEVELOPMENT_MANUAL.md) - Complete development guide with environment setup
+- [Quick Reference](./docs/QUICK_REFERENCE.md) - Fast command reference
+- [Setup Script](./scripts/setup-dev-environment.sh) - Automated environment configuration
+- [Screenshot Script](./scripts/take-screenshots.ts) - Automated UI screenshot generation
 
 ## Submit Your Marketplace
 
